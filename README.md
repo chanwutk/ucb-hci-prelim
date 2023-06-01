@@ -1,2 +1,1 @@
-# ucb-hci-prelim
-Study Resources for UC Berkeley HCI Prelim
+# Study Resources for UC Berkeley HCI Prelim
