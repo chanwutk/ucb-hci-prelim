@@ -1,0 +1,1859 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0057)https://searchuserinterfaces.com/book/sui_ch1_design.html -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>Design of Search User Interfaces (Ch 1) | Search User Interfaces | Marti Hearst | Cambridge University Press
+    2009</title>
+  <!-- <meta name="description"
+    content="Full text content of the book Search User Interfaces, written by Marti Hearst and published by Cambridge University Press, 2009.  Chapter 1: Design of Search User Interfaces"> -->
+  <link
+    href="./Design of Search User Interfaces (Ch 1) _ Search User Interfaces _ Marti Hearst _ Cambridge University Press 2009_files/sui.css"
+    rel="stylesheet" type="text/css" media="all">
+  <!-- <link rel="shortcut icon" href="https://searchuserinterfaces.com/book/images/favicon.ico"> -->
+  <!-- <script language="JavaScript"
+    src="./Design of Search User Interfaces (Ch 1) _ Search User Interfaces _ Marti Hearst _ Cambridge University Press 2009_files/fix.js.download"
+    type="text/JavaScript"></script>
+  <script language="JavaScript"
+    src="./Design of Search User Interfaces (Ch 1) _ Search User Interfaces _ Marti Hearst _ Cambridge University Press 2009_files/qTip.js.download"
+    type="text/JavaScript"></script>
+  <script language="JavaScript" type="text/javascript"
+    src="./Design of Search User Interfaces (Ch 1) _ Search User Interfaces _ Marti Hearst _ Cambridge University Press 2009_files/jquery.min.js.download"></script>
+  <script language="JavaScript" type="text/javascript"
+    src="./Design of Search User Interfaces (Ch 1) _ Search User Interfaces _ Marti Hearst _ Cambridge University Press 2009_files/slimbox2.js.download"></script> -->
+  <!-- <link rel="stylesheet"
+    href="./Design of Search User Interfaces (Ch 1) _ Search User Interfaces _ Marti Hearst _ Cambridge University Press 2009_files/slimbox2.css"
+    type="text/css" media="screen"> -->
+  <!-- suggest script -->
+  <!-- <style type="text/css">
+    @import url("sphider/include/js_suggest/SuggestFramework.css");
+  </style> -->
+  <!-- <script language="JavaScript" type="text/javascript"
+    src="./Design of Search User Interfaces (Ch 1) _ Search User Interfaces _ Marti Hearst _ Cambridge University Press 2009_files/SuggestFramework.js.download"></script>
+  <script language="JavaScript" type="text/javascript">AddOnload(initializeSuggestFramework);</script> -->
+  <!-- /suggest script -->
+  <style>
+    @media print {
+      p {
+        text-align: justify;
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 12px;
+        line-height: 1.3;
+      }
+
+      li,
+      .caption,
+      div.chapter {
+        text-align: justify;
+        font-size: 12px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        text-align: left;
+      }
+
+      td {
+        line-height: 1.2;
+        font-size: 11px;
+      }
+
+      table {
+        width: 100%;
+      }
+
+      .pagebreak {
+        page-break-before: always;
+      }
+
+      .references p {
+        line-height: normal;
+        padding: 0;
+        margin: 0;
+        margin-top: 2px;
+        font-size: 8.5px;
+      }
+
+      /* h3 {
+                margin-top: 5px;
+            } */
+
+      body {
+        column-count: 2;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+      }
+      /* #container {
+        margin: 10px;
+      } */
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <!-- div header -->
+    <!-- div navmenu -->
+    <div id="">
+      <div class="">
+        <div class="chapter" id="chapter_1">
+          <div class="notice">From the book <i>Search User Interfaces</i>, published by Cambridge University Press.
+            Copyright � 2009 by Marti A. Hearst.</div>
+          <h1>Ch. 1: The Design of Search User Interfaces</h1>
+          <h2>Chapter Contents</h2>
+          <ul>
+            <li><a href="https://searchuserinterfaces.com/book/sui_ch1_design.html#section_1.1"> 1.1: Keeping the
+                Interface Simple</a></li>
+            <li><a href="https://searchuserinterfaces.com/book/sui_ch1_design.html#section_1.2"> 1.2: A Historical Shift
+                in Search Interface Design</a></li>
+            <li><a href="https://searchuserinterfaces.com/book/sui_ch1_design.html#section_1.3"> 1.3: The Process of
+                Search Interface Design</a></li>
+            <li><a href="https://searchuserinterfaces.com/book/sui_ch1_design.html#section_1.4"> 1.4: Design Guidelines
+                for Search Interfaces</a></li>
+            <li><a href="https://searchuserinterfaces.com/book/sui_ch1_design.html#section_1.5"> 1.5: Offer Efficient
+                and Informative Feedback</a></li>
+            <li><a href="https://searchuserinterfaces.com/book/sui_ch1_design.html#section_1.6"> 1.6: Balance User
+                Control with Automated Actions</a></li>
+            <li><a href="https://searchuserinterfaces.com/book/sui_ch1_design.html#section_1.7"> 1.7: Reduce Short-Term
+                Memory Load</a></li>
+            <li><a href="https://searchuserinterfaces.com/book/sui_ch1_design.html#section_1.8"> 1.8: Provide
+                Shortcuts</a></li>
+            <li><a href="https://searchuserinterfaces.com/book/sui_ch1_design.html#section_1.9"> 1.9: Reduce Errors</a>
+            </li>
+            <li><a href="https://searchuserinterfaces.com/book/sui_ch1_design.html#section_1.10"> 1.10: Recognize the
+                Importance of Small Details</a></li>
+            <li><a href="https://searchuserinterfaces.com/book/sui_ch1_design.html#section_1.11"> 1.11: Recognize the
+                Importance of Aesthetics in Design</a></li>
+            <li><a href="https://searchuserinterfaces.com/book/sui_ch1_design.html#section_1.12"> 1.12: Conclusions</a>
+            </li>
+          </ul>
+          <p>
+          </p>
+          <div class='figure-2' id="figure_1.1">
+            <img
+              src="./Design of Search User Interfaces (Ch 1) _ Search User Interfaces _ Marti Hearst _ Cambridge University Press 2009_files/infoseek_vs_google.png"
+              width="100%">
+            <!-- <p><a rel="lightbox"
+                href="./Design of Search User Interfaces (Ch 1) _ Search User Interfaces _ Marti Hearst _ Cambridge University Press 2009_files/infoseek_vs_google.png"
+                tiptitle="Figure 1.1">
+                </a></p> -->
+            <div class="caption"> <b>Figure 1.1:</b> Search results listings from Infoseek in 1997 (left) and Google in
+              2007 (right), courtesy Jan Pedersen.
+            </div><!-- end div caption -->
+          </div> <!-- end div figure -->
+          <p>
+          </p>
+          <div class="section" id="section_1.1">
+            <h2>1.1: Keeping the Interface Simple</h2>
+            <p>
+              The job of the search user interface is to aid users in the expression of their information needs, in the
+              formulation of their queries, in the understanding of their search results, and in keeping track of the
+              progress of their information seeking efforts. </p>
+            <p>
+              However, the typical search interface today is of the form: type-keywords-in-entry-form,
+              view-results-in-a-vertical-list. A comparison of a search results page from Google in 2007 to that of
+              Infoseek in 1997 shows that they are nearly identical (see Figure <a
+                href="https://searchuserinterfaces.com/book/sui_ch1_design.html#figure_1.1"><b>1.1</b></a>). Why is the
+              standard interface so simple? Some important reasons for the relative simplicity and unchanging nature of
+              the standard Web search interface are: </p>
+            <p>
+            </p>
+            <div id="index_Google_1"></div>
+            <div id="index_Infoseek_1"></div>
+            <p>
+            </p>
+            <div id="index_keyword queries_1"></div>
+            <p>
+            </p>
+            <ul>
+              <li> Search is a means towards some other end, rather than a goal in itself. When a person is looking for
+                information, they are usually engaged in some larger task, and do not want their flow of thought
+                interrupted by an intrusive interface. <p>
+                </p>
+              </li>
+              <li> Related to the first point, search is a mentally intensive task. When a person reads text, they are
+                focused on that task; it is not possible to read and to think about something else at the same time.
+                Thus, the fewer distractions while reading, the more usable the interface. <p>
+                </p>
+              </li>
+              <li> Since nearly everyone who uses the Web uses search, the interface design must be understandable and
+                appealing to a wide variety of users of all ages, cultures and backgrounds, applied to an enormous
+                variety of information needs. </li>
+            </ul>
+            <p>
+              Designers of Web search interfaces have learned that in order to be able to successfully serve their
+              highly diverse user base, they must be very careful about any complexity that they introduce. Almost any
+              feature that a designer might think is intuitive and obvious is likely to be mystifying to a significant
+              proportion of Web users. </p>
+            <p>
+            </p>
+            <p>
+              To illustrate this point, despite the simplicity of the search results listings shown above, research
+              suggests that even this spartan presentation is too complex for some people. A study of elderly users by
+              <a href="https://searchuserinterfaces.com/book/sui_references.html#aula2005lim" tiptitle="A.�Aula and
+  M.�K�ki.
+Less is more in Web search interfaces for older adults.
+&lt;i&gt;First Monday&lt;/i&gt;, 10(5), 2005.">Aula and K�ki, 2005</a> found that further simplifying the list of
+              results reduced errors substantially. And research by <a
+                href="https://searchuserinterfaces.com/book/sui_references.html#hargittai2004cac" tiptitle="E.�Hargittai.
+Classifying and Coding Online Actions.
+&lt;i&gt;Social Science Computer Review&lt;/i&gt;, 22(2):210�227, 2004.">Hargittai, 2004</a> showed that some people do
+              not understand even the very basics of keyword specification. Unlike most studies that involve
+              university-educated participants exclusively, Hargittai obtained a random sample of 100 participants
+              representative of the population of a county in New Jersey according to socio-economic factors. <a
+                href="https://searchuserinterfaces.com/book/sui_references.html#hargittai2004cac" tiptitle="E.�Hargittai.
+Classifying and Coding Online Actions.
+&lt;i&gt;Social Science Computer Review&lt;/i&gt;, 22(2):210�227, 2004.">Hargittai, 2004</a> found that, in addition to
+              not really understanding keyword queries, many participants confused the address bar with the search entry
+              form, and vice versa (the latter effect is common, as can be inferred from the fact that the most frequent
+              queries for all search engines are <b> google</b> and <b> yahoo</b>). Some participants confused the
+              syntax of the address bar with the syntax of query terms, placing spaces within URLs in the address form,
+              as in <b> www.new york times.com</b> and <b> time warner.com</b>, or omitting all spaces from their
+              keywords, resulting in queries like <b> presidentalcampaign2000</b>, <b> employmentopportunities</b>, and
+              <b> fordescort</b>.
+            </p>
+            <p>
+            </p>
+            <div id="index_URLs_1"></div>
+            <div id="index_elderly searchers_1"></div>
+            <div id="index_keyword queries_2"></div>
+            <p>
+              Another study by <a href="https://searchuserinterfaces.com/book/sui_references.html#muramatsu2001tqi"
+                tiptitle="J.�Muramatsu and W.�Pratt.
+Transparent Queries: Investigation Users&#39; Mental Models Of Search Engines.
+&lt;i&gt;Proceedings of the 24th Annual International ACM SIGIR Conference on
+  Research and development in information retrieval (SIGIR&#39;01)&lt;/i&gt;, pages
+  217�224, 2001.">Muramatsu and Pratt, 2001</a> with 14 participants found that most people had strong misconceptions
+              about simple Boolean operations. When comparing search engines that automatically applied AND versus OR to
+              query terms, some assumed the ANDing search engine indexed a smaller collection; most had no explanation
+              at all. When receiving empty results for the query <b> to be or not to be</b>, two thirds could not
+              explain this phenomenon in a way that remotely resembled stopword removal. For term order variation in
+              queries (for example, <b> boat fire</b> vs. <b> fire boat</b>), two thirds did not expect the results to
+              differ. </p>
+            <p>
+            </p>
+            <div id="index_Boolean syntax_1"></div>
+            Although today's standard search is a big improvement in usability over older command-line based Boolean
+            systems, there is evidence that keyword querying is not initially intuitive. In fact, the literature
+            suggests that people who are new to using search engines tend to start by asking a natural language question
+            (<a href="https://searchuserinterfaces.com/book/sui_references.html#bilal2000c" tiptitle="D.�Bilal.
+Children&#39;s use of the Yahooligans! Web search engine. I. Cognitive, physical,
+  and affective behaviors on fact-based search tasks.
+&lt;i&gt;Journal of the American Society for Information Science&lt;/i&gt;,
+  51(7):646�665, 2000.">Bilal, 2000</a>, <a
+              href="https://searchuserinterfaces.com/book/sui_references.html#schacter1998csi" tiptitle="J.�Schacter,
+  G.K.W.K. Chung, and A.�Dorr.
+Children&#39;s internet searching on complex problems: Performance and process
+  analyses.
+&lt;i&gt;Journal of the American Society for Information Science&lt;/i&gt;,
+  49(9):840�849, 1998."> Schacter et&nbsp;al., 1998</a>). Novice searchers must <i> learn</i> to expect that a query
+            will not yield immediately usable results, and that they must scan search results lists, navigate through
+            Web sites and read through Web pages to try to find the information they seek. A study by <a
+              href="https://searchuserinterfaces.com/book/sui_references.html#pollock1997swi" tiptitle="A.�Pollock
+  and A.�Hockley.
+What&#39;s Wrong with Internet Searching.
+&lt;i&gt;D-Lib Magazine&lt;/i&gt;, 1997.
+www.dlib.org.">Pollock and Hockley, 1997</a> found that, for novice searchers, the notion of iterative searching was
+            unfamiliar. Some study participants assumed that if their first attempt failed then either they were
+            incapable of searching or the system did not contain information relevant to their interest. <p>
+            </p>
+            <div id="index_novice searchers_1"></div>
+            <p>
+              Given the difficulty that some users experience in using relatively simple interface elements, it is
+              perhaps not surprising that attempts to improve search via more complex interfaces have for the most part
+              not been widely adopted. There are, however, some successful innovations in search interfaces which are
+              becoming widely used; some of these are discussed in the design guidelines sections below. First though, a
+              historical interlude explains the evolution of search interfaces over time. This is followed by a brief
+              summary of how interface design is done in practice, and then a discussion of design guidelines for search
+              user interfaces. </p>
+            <p>
+            </p>
+          </div> <!-- end div section -->
+          <div class="section" id="section_1.2">
+            <h2>1.2: A Historical Shift in Search Interface Design</h2>
+            <p>
+            </p>
+            <div id="index_older search systems_1"></div>
+            <p>
+              The story of search user interfaces is complicated by a radical shift that occurred after the Web became a
+              worldwide phenomenon. Before the Web, computerized information retrieval was usually done only by members
+              of a narrow demographic: highly educated users, such as paralegals, librarians and other search
+              intermediaries, and journalists. These people searched over highly specialized, high-quality,
+              information-oriented text collections such as bibliographic records for university libraries, legal cases
+              and opinions, and newswire articles. Often the providers of search access to these collections had
+              monopolies on the content, and therefore did not feel the pressure of competition to provide improved
+              interfaces for that content. </p>
+            <p>
+            </p>
+            <div id="index_paralegals_1"></div>
+            <div id="index_journalists_1"></div>
+            <div id="index_news collection_1"></div>
+            <div id="index_legal cases_1"></div>
+            <div id="index_librarians_1"></div>
+            <div id="index_bibliographic systems_1"></div>
+            <p>
+              By contrast, the Internet is now accessed by 75% of the U.S. adult population, and 91% of those who use
+              the Internet use Web search engines (<a
+                href="https://searchuserinterfaces.com/book/sui_references.html#pewtracking2008" tiptitle="Pew.
+Tracking Survey, February 15 2008.
+http://www.pewinternet.org/trends/Internet_Activities_7.22.08.htm.">Pew, 2008b</a>). The content of the Web differs
+              from that of earlier systems in several important ways. Older systems usually did not allow search over
+              full text; rather, the user could only search over titles and perhaps abstracts and other descriptive
+              metadata. Search was usually used to find the name and location of a source containing this information,
+              and then a physical paper copy would have to be obtained to see the full text. By contrast, most of what
+              is available on the Web is the full text itself; the desired information is often immediately accessible.
+            </p>
+            <p>
+            </p>
+            <div id="index_metadata_1"></div>
+            <div id="index_full text_1"></div>
+            <p>
+              The content available on the Web is vastly broader than that of older systems, and in addition to
+              expository text, contains the equivalent of brochures and local newsletters, official information for
+              companies and all kinds of organizations, information that can be used directly, such as guitar chords and
+              knitting patterns, how-to information, hobbyist guides, and so on. The Web can be used to see the answers
+              to questions, such as <b> what is the population of Madagascar</b>, directly. This was not usually
+              possible in the older systems, which acted as gateways to more detailed information that was available
+              only offline. </p>
+            <p>
+            </p>
+            <div id="index_collection characteristics_1"></div>
+            <p>
+              Older systems were developed before bitmapped (graphical) displays were commonplace, and so were based on
+              command-line interfaces. These usually required complex combinations of operators -- which had to be
+              memorized -- and Boolean syntax for query specification. Very few members of the lay public understand
+              Boolean syntax and even fewer are willing to learn command languages. The lack of competitors with access
+              to the content, plus an installed base of users who knew the old systems, probably slowed the adoption of
+              modern user interface conventions. Another important difference between old and new search systems is that
+              older retrieval systems often charged for use (in terms of number of queries issued, number of results
+              returned, or amount of time used), whereas Web search has always been free of charge. </p>
+            <p>
+            </p>
+            <div id="index_command languages_1"></div>
+            <div id="index_Boolean syntax_2"></div>
+            <div id="index_charge for use_1"></div>
+            <p>
+              These contrasts -- highly educated and trained users verses everyone as a user; high-quality, expensively
+              edited expository text versus a huge variety and multiplicity of information types, search over document
+              metadata (titles and abstracts) rather than over full text, TTY displays versus graphical displays, and
+              expensive usage controlled by one provider versus free usage provided by a multiplicity of search
+              providers -- help explain the differences seen in search user interfaces before and after the Web. These
+              differences will be revisited throughout this book. </p>
+            <p>
+            </p>
+            <div id="index_expert searchers_1"></div>
+            <div id="index_older search systems_2"></div>
+            <p>
+            </p>
+          </div> <!-- end div section -->
+          <div class="section" id="section_1.3">
+            <h2>1.3: The Process of Search Interface Design</h2>
+            <p>
+            </p>
+            <div id="index_design process_1"></div>
+            <p>
+              An important quality of a user interface (UI) is its <i> usability</i>, a term which refers to those
+              properties of the interface that determine how easy it is to use. <a
+                href="https://searchuserinterfaces.com/book/sui_references.html#shneiderman:dui" tiptitle="B.�Shneiderman and C.�Plaisant.
+&lt;i&gt;Designing the user interface: strategies for effective human-computer
+  interaction, 4/E&lt;/i&gt;.
+Addison Wesley, 2004.">Shneiderman and Plaisant, 2004</a> identify five components of usability, restated by <a
+                href="https://searchuserinterfaces.com/book/sui_references.html#nielsen2003u" tiptitle="J.�Nielsen.
+Usability 101, 2003.
+http://www.useit.com/alertbox/20030825.html.">Nielsen, 2003b</a> as: </p>
+            <p>
+            </p>
+            <div id="index_usability_1"></div>
+            <p>
+            </p>
+            <ul>
+              <li> <i> Learnability:</i> How easy is it for users to accomplish basic tasks the first time they
+                encounter the interface? </li>
+              <li> <i> Efficiency:</i> How quickly can users accomplish their tasks after they learn how to use the
+                interface? </li>
+              <li> <i> Memorability:</i> After a period of non-use, how long does it take users to reestablish
+                proficiency? </li>
+              <li> <i> Errors:</i> How many errors do users make, how severe are these errors, and how easy is it for
+                users to recover from these errors? </li>
+              <li> <i> Satisfaction:</i> How pleasant or satisfying is it to use the interface? </li>
+            </ul>
+            <p>
+            </p>
+            <div id="index_effectiveness_1"></div>
+            <div id="index_efficiency_1"></div>
+            <div id="index_satisfaction_1"></div>
+            <p>
+              How are interfaces designed in order to attain the goals of usability? Despite the newly recognized
+              importance of usability and user interface design, it is nonetheless surprisingly difficult to design
+              highly usable interfaces. The field that encompasses interface design, as well as understanding how people
+              interact with information and technology, is called <i> Human-Computer Interaction</i>, or HCI (<a
+                href="https://searchuserinterfaces.com/book/sui_references.html#shneiderman:dui" tiptitle="B.�Shneiderman and C.�Plaisant.
+&lt;i&gt;Designing the user interface: strategies for effective human-computer
+  interaction, 4/E&lt;/i&gt;.
+Addison Wesley, 2004.">Shneiderman and Plaisant, 2004</a>). Among many other activities, this field has led to the
+              development of a design technique called <i> user-centered design</i> whose goal is to lead to the
+              development of usable designs. </p>
+            <p>
+            </p>
+            <div id="index_Human-Computer Interaction_1"></div>
+            <div id="index_HCI_1"></div>
+            <div id="index_user-centered design_1"></div>
+            <p>
+              In user-centered design, decisions are made based on responses obtained from target users of the system.
+              (This is in contrast with standard software practice in which the designers assume they know what users
+              need, and so write the code first and assess it with users later.) In user-centered design, first a <i>
+                needs assessment</i> is performed in which the designers investigate who the users are, what their goals
+              are, and what tasks they have to complete in order to achieve those goals. The next stage is a <i> task
+                analysis</i> in which the designers characterize which steps the users need to take to complete their
+              tasks, decide which user goals they will attempt to support, and then create scenarios which exemplify
+              these tasks being executed by the target user population (<a
+                href="https://searchuserinterfaces.com/book/sui_references.html#kuniavsky2003oue" tiptitle="M.�Kuniavsky.
+&lt;i&gt;Observing the User Experience: A Practitioner&#39;s Guide to User
+  Research&lt;/i&gt;.
+Morgan Kaufmann, 2003.">Kuniavsky, 2003</a>, <a
+                href="https://searchuserinterfaces.com/book/sui_references.html#mayhew1999uel" tiptitle="D.J. Mayhew.
+&lt;i&gt;The Usability Engineering Lifecycle: A Practitioner&#39;s Handbook for User
+  Interface Design&lt;/i&gt;.
+ACM New York, NY, USA, 1999."> Mayhew, 1999</a>). </p>
+            <p>
+            </p>
+            <div id="index_needs assessment_1"></div>
+            <div id="index_task analysis_1"></div>
+            <div id="index_iterative design_1"></div>
+            <p>
+              Once the target user goals and tasks have been determined, design is done in a design-evaluate-redesign
+              cycle consisting of creating prototypes, obtaining reactions from potential users, and revising the
+              designs based on those reactions. This sequence of activities often needs to be repeated several times
+              before a satisfactory design emerges. Evaluation at this phase can often achieve useful results by testing
+              with only a few participants, so the evaluation method used at this point in the design space is often
+              referred to as �discount� usability testing (<a
+                href="https://searchuserinterfaces.com/book/sui_references.html#nielsen1989ued" tiptitle="J.�Nielsen.
+Usability engineering at a discount.
+In &lt;i&gt;Proceedings of the third international conference on human-computer
+  interaction&lt;/i&gt;, pages 394�401. Elsevier Science Inc. New York, NY, USA,
+  1989.">Nielsen, 1989b</a>). After a design is testing well in discount or informal studies, formal experiments
+              comparing different designs and measuring for statistically significant differences can be conducted. </p>
+            <p>
+            </p>
+            <div id="index_prototyping_1"></div>
+            <div id="index_discount usability testing_1"></div>
+            <p>
+              This iterative procedure is necessary because interface design is still more of a practice than a science.
+              There are usually several good solutions within the interface design space, and the task of the designers
+              is to navigate through the design space until reaching some �local optimum.� The iterative process allows
+              study participants to help the designers make decisions about which paths to explore in that space.
+              Experienced designers often can begin the design near a good part of the solution space; less experienced
+              designers need to do more exploration. Designing for an entirely novel interaction paradigm often requires
+              more iteration and experimentation. Evaluation is part of every cycle of the user-centered design process.
+              Because it is such an important topic, it receives a chapter of its own in this book (Chapter <a
+                href="https://searchuserinterfaces.com/book/sui_ch2_evaluation.html"><b>2</b></a>). </p>
+            <p>
+            </p>
+            <div id="index_design space_1"></div>
+            <p>
+            </p>
+            <div id="index_design process_2"></div>
+            <p>
+            </p>
+          </div> <!-- end div section -->
+          <div class="section" id="section_1.4">
+            <h2>1.4: Design Guidelines for Search Interfaces</h2>
+            <p>
+            </p>
+            <div id="index_design guidelines_1"></div>
+            <p>
+              Researchers and practitioners in the field of Human-Computer Interaction have proposed dozens of sets of
+              guidelines for successfully building user interfaces. Some authors have proposed guidelines for search
+              interfaces specifically; an influential paper by <a
+                href="https://searchuserinterfaces.com/book/sui_references.html#shneiderman1997csu" tiptitle="B.�Shneiderman, D.�Byrd, and WB�Croft.
+Clarifying Search: A User-Interface Framework for Text Searches.
+&lt;i&gt;DL Magazine&lt;/i&gt;, January 1997.">Shneiderman et&nbsp;al., 1997</a> specifies eight design desiderata for
+              search user interfaces generally (re-ordered below): </p>
+            <p>
+            </p>
+            <ul>
+              <li> Offer informative feedback. </li>
+              <li> Support user control. </li>
+              <li> Reduce short-term memory load. </li>
+              <li> Provide shortcuts for skilled users. </li>
+              <li> Reduce errors; offer simple error handling. </li>
+              <li> Strive for consistency. </li>
+              <li> Permit easy reversal of actions. </li>
+              <li> Design for closure. </li>
+            </ul>
+            <p>
+              These guidelines provide good advice for search UI design. However, design guidelines can be difficult to
+              follow, for a number of reasons. First, they are under-specified; they do not usually say <i> how</i> to
+              achieve the guideline's goals. Second, meeting one guideline often conflicts with meeting another. For
+              instance, in order to satisfy the consistency rule, if every results page must look identical, then an
+              interface that shows query term suggestions in retrieval results must show a label stating �no feedback
+              terms available� when it has no suggestions to make. This message would keep the interface consistent, but
+              at the cost of distracting users with unnecessary information. Third, any list of guidelines is
+              incomplete. For instance, the list above omits <a
+                href="https://searchuserinterfaces.com/book/sui_references.html#nielsen93" tiptitle="Jakob Nielsen.
+&lt;i&gt;Usability Engineering&lt;/i&gt;.
+Academic Press, 1993.">Nielsen, 1993</a>'s commonly stated guideline of �speak the user's language,� which urges
+              designers to adopt concepts and language familiar to users where possible. And finally, for any given
+              interface, some guidelines will be superfluous. </p>
+            <p>
+              Despite these drawbacks, the following sections elaborate in more detail about how some of these design
+              guidelines should be applied to search interfaces. These guidelines and recommendations are informed by a
+              study of the search interface literature, by cognitive considerations in search, and by a decade of
+              experience designing such interfaces. The substance behind most of these is discussed in more detail in
+              later chapters of this book. </p>
+            <p>
+              It should be noted that these guidelines are specific to search interfaces; there are many other very
+              important design guidelines for other aspects of interface design, and a number of excellent books to
+              refer to for them (e.g., (<a
+                href="https://searchuserinterfaces.com/book/sui_references.html#nielsen2006pwu" tiptitle="J.�Nielsen and H.�Loranger.
+&lt;i&gt;Prioritizing Web Usability&lt;/i&gt;.
+New Riders, 2006.">Nielsen and Loranger, 2006</a>, <a
+                href="https://searchuserinterfaces.com/book/sui_references.html#cooper2007abt" tiptitle="A.�Cooper,
+  R.�Reimann, and D.�Cronin.
+&lt;i&gt;About Face 3: The Essentials of User Interface Design&lt;/i&gt;.
+John Wiley &amp; Sons, Inc., 2007."> Cooper et&nbsp;al., 2007</a>) ). </p>
+            <p>
+            </p>
+          </div> <!-- end div section -->
+          <div class="section" id="section_1.5">
+            <h2>1.5: Offer Efficient and Informative Feedback</h2>
+            <p>
+              A bedrock principle of interface design is to provide the user with <i> feedback</i> about the status of
+              the system and how that relates to the user's interactions with the system. A familiar example of
+              interface feedback is the hourglass timer icon that is typically shown in a graphical operating system
+              interface to indicate that the user has to wait while an application is launching or saving a large file.
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+            <p>
+              Because the search task is so cognitively intensive, feedback about query formulation, about the reasons
+              the particular results were retrieved, and about next steps to be taken is critically important. The
+              subsections below describe important feedback indicators for search interfaces. </p>
+            <p>
+            </p>
+            <div class="subsection" id="subsection_1.5.1">
+              <h3>1.5.1: Show Search Results Immediately</h3>
+              <p>
+                Numerous studies show that an important search interface design principle is to show users some search
+                results immediately after their initial query or navigation step (<a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#hutchinson2006eic" tiptitle="H.B.
+  Hutchinson, B.B. Bederson, and A.�Druin.
+The evolution of the international children&#39;s digital library searching and
+  browsing interface.
+&lt;i&gt;Interaction Design And Children&lt;/i&gt;, pages 105�112, 2006.">Hutchinson et&nbsp;al., 2006</a>, <a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#plaisant1997bts" tiptitle="C.�Plaisant,
+  G.�Marchionini, T.�Bruns, A.�Komlodi, and L.�Campbell.
+Bringing treasures to the surface: iterative design for the Library of
+  Congress National Digital Library Program.
+&lt;i&gt;Proceedings of the SIGCHI Conference on Human Factors in Computing
+  Systems (CHI&#39;97)&lt;/i&gt;, pages 518�525, 1997."> Plaisant et&nbsp;al., 1997a</a>, <a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#kakidissertation" tiptitle="M.�K�ki.
+&lt;i&gt;Enhancing Web Search Result Access With Automatic
+  Categorization&lt;/i&gt;.
+PhD thesis, University Of Tampere, Finland, Ph.D. Dissertation, University Of
+  Tampere, Finland, Dissertations In Interactive Technology, Number 2.,
+  2005."> K�ki, 2005a</a>). This information can be shown alongside other navigation aids, but at least a few initial
+                results should be shown. This helps searchers understand if they are on the right track or not, and also
+                provides them with suggestions of related words that they might use for query reformulation. Many
+                experimental systems make the mistake of requiring the user to look at large amounts of helper
+                information, such as query refinement suggestions or category labels, before viewing results directly.
+                Information visualization interfaces that show documents as dots or icons in a two-dimensional space
+                suffer from poor usability because the searcher cannot see the text of the titles and document
+                surrogates (<a href="https://searchuserinterfaces.com/book/sui_references.html#hornbaek1999tmi"
+                  tiptitle="K.�Hornb�k and E.�Fr�kj�r.
+Do Thematic Maps Improve Information Retrieval.
+&lt;i&gt;Human-Computer Interaction (INTERACT&#39;99)&lt;/i&gt;, pages 179�186,
+  1999.">Hornb�k and Fr�kj�r, 1999</a>, <a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#granitzer2004esi" tiptitle="M.�Granitzer, W.�Kienreich, V.�Sabol, K.�Andrews, and
+  W.�Klieber.
+Evaluating a System for Interactive Exploration of Large, Hierarchically
+  Structured Document Repositories.
+&lt;i&gt;Proceedings of the IEEE Symposium on Information Visualization
+  (INFOVIS&#39;04)&lt;/i&gt;, pages 127�133, 2004."> Granitzer et&nbsp;al., 2004</a>). </p>
+              <p>
+              </p>
+              <p>
+              </p>
+            </div> <!-- end div subsection -->
+            <div class="subsection" id="subsection_1.5.2">
+              <h3>1.5.2: Show Informative Document Surrogates; Highlight Query Terms</h3>
+              <p>
+              </p>
+              <div id="index_search results presentations_1"></div>
+              <p>
+                Most search results listings today show a vertical list of results, each containing information about
+                the document and why it was retrieved, such as the title, the URL, and a textual summary; this
+                information is referred to as the <i> document surrogate</i>. The documents' <i> summaries</i> (also
+                called <i> snippets, extracts</i>, and <i> abstracts</i>) are typically a few lines of text extracted
+                from the retrieved documents. </p>
+              <p>
+              </p>
+              <div id="index_surrogates_1"></div>
+              <div id="index_summaries_1"></div>
+              <p>
+                An important form of feedback in search results listings is to include the terms from the query in the
+                document surrogates in order to show how the retrieved document relates to the concepts expressed in the
+                query. Early Web search interfaces showed the first few lines of the document in the summary, but today,
+                summaries are designed to show the query terms in the context in which they occur in the document.
+                Research shows that summaries are most informative if they contain the query terms shown in their
+                context from the document (<a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#tombros1998aqb" tiptitle="A.�Tombros and M.�Sanderson.
+Advantages of query biased summaries in information retrieval.
+&lt;i&gt;Proceedings of the 21st Annual International ACM SIGIR Conference on
+  Research and development in information retrieval (SIGIR&#39;98)&lt;/i&gt;, pages
+  2�10, 1998.">Tombros and Sanderson, 1998</a>, <a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#white2003tos" tiptitle="R.W. White,
+  J.�Jose, and I.�Ruthven.
+A task-oriented study on the influencing effects of query-biased summarisation
+  in web searching.
+&lt;i&gt;Information Processing and Management&lt;/i&gt;, 39(5):707�733, 2003."> White et&nbsp;al., 2003a</a>). </p>
+              <p>
+              </p>
+              <div id="index_older search systems_3"></div>
+              <p>
+                Query term proximity information can be quite effective at improving precision of searches (<a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#hearst96a" tiptitle="M.A. Hearst.
+Improving full-text precision using simple query constraints.
+In &lt;i&gt;Proceedings of the Fifth Annual Symposium on Document Analysis and
+  Information Retrieval (SDAIR&#39;96)&lt;/i&gt;, Las Vegas, NV, 1996.">Hearst, 1996</a>, <a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#clarke96" tiptitle="C.L.A. Clarke, G.V.
+  Cormack, and F.J. Burkowski.
+Shortest substring ranking (multitext experiments for TREC-4).
+In Donna Harman, editor, &lt;i&gt;Proceedings of the Fifth Text REtrieval
+  Conference (TREC-5)&lt;/i&gt;. 1996."> Clarke et&nbsp;al., 1996</a>, <a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#tao:aeo" tiptitle="T.�Tao and C.�Zhai.
+An exploration of proximity measures in information retrieval.
+In &lt;i&gt;Proceedings of the 30th Annual International ACM SIGIR Conference on
+  Research and development in information retrieval (SIGIR&#39;07)&lt;/i&gt;, pages
+  295�302. ACM Press, 2007."> Tao and Zhai, 2007</a>). According to a large study by <a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#clarke2007icf" tiptitle="C.L.A. Clarke,
+  E.�Agichtein, S.�Dumais, and R.W. White.
+The influence of caption features on clickthrough patterns in web search.
+In &lt;i&gt;Proceedings of the 30th Annual International ACM SIGIR Conference on
+  Research and development in information retrieval (SIGIR&#39;07)&lt;/i&gt;, pages
+  135�142. ACM Press New York, NY, USA, 2007.">Clarke et&nbsp;al., 2007</a>, when possible, all the query terms should
+                appear in the search result surrogate, but if all of the query terms are present in the title for the
+                hit, they need not appear in the summary, which can then include other useful relevance information. <a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#clarke2007icf" tiptitle="C.L.A. Clarke,
+  E.�Agichtein, S.�Dumais, and R.W. White.
+The influence of caption features on clickthrough patterns in web search.
+In &lt;i&gt;Proceedings of the 30th Annual International ACM SIGIR Conference on
+  Research and development in information retrieval (SIGIR&#39;07)&lt;/i&gt;, pages
+  135�142. ACM Press New York, NY, USA, 2007.">Clarke et&nbsp;al., 2007</a> also found that query terms appearing in
+                the URL can be a useful cue, but that length and complexity of the displayed URL should be reduced where
+                possible. </p>
+              <p>
+              </p>
+              <div id="index_URLs_2"></div>
+              <div id="index_precision_1"></div>
+              <div id="index_proximity of query terms_1"></div>
+              <p>
+                It has also been shown that visually highlighting query terms can be a useful feature for search
+                interfaces (<a href="https://searchuserinterfaces.com/book/sui_references.html#landauer93" tiptitle="T.K. Landauer,
+  D.E. Egan, J.R. Remde, M.E. Lesk, C.C. Lochbaum, and D.�Ketchum.
+Enhancing the usability of text through computer delivery and formative
+  evaluation: the superbook project.
+In C.�McKnight, A.�Dillon, and J.�Richardson, editors, &lt;i&gt;Hypertext: A
+  Psychological Perspective&lt;/i&gt;, pages 71�136. Ellis Horwood, 1993.">Landauer et&nbsp;al., 1993</a>, <a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#lesk97" tiptitle="Michael Lesk.
+&lt;i&gt;Practical Digital Libraries; Books, Bytes, &amp; Bucks&lt;/i&gt;.
+Morgan Kaufman, 1997."> Lesk, 1997</a>, <a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#marchionini95" tiptitle="Gary Marchionini.
+&lt;i&gt;Information Seeking in Electronic Environments&lt;/i&gt;.
+Cambridge University Press, 1995."> Marchionini, 1995</a>, <a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#aula2004ers" tiptitle="A.�Aula.
+Enhancing the readability of search result summaries.
+&lt;i&gt;Proceedings of HCI 2004&lt;/i&gt;, pages 6�10, 2004."> Aula, 2004</a>). Term highlighting refers to altering
+                the appearance of portions of text in order to make them more visually salient, or �eye-catching�.
+                Highlighting can be done in boldface, reverse video, by displaying a colored background behind each
+                occurrence of a query term, assigning a different color to each term. This helps draw the searcher's
+                attention to the parts of the document most likely to be relevant to the query, and to show how closely
+                the query terms appear to one another in the text. However, it is important not to highlight too many
+                terms, as the positive effects of highlighting will be lost (<a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#kickmeier2003esi" tiptitle="M.D.
+  Kickmeier and D.�Albert.
+The effects of scanability on information search: An online experiment.
+In &lt;i&gt;Proceedings of HCI 2003&lt;/i&gt;, volume�2, pages 33�36, 2003.">Kickmeier and Albert, 2003</a>). </p>
+              <p>
+              </p>
+              <div id="index_color highlighting_1"></div>
+              <p>
+                There is an inherent tradeoff between showing long, informative summaries and minimizing the screen
+                space required by each search hit. There is also a tension between showing fragments of sentences that
+                contain all or most of the query terms and showing coherent stretches of text containing only some of
+                the query terms. Research is mixed about how and when chopped-off sentences are preferred and when they
+                harm usability (<a href="https://searchuserinterfaces.com/book/sui_references.html#aula2004ers"
+                  tiptitle="A.�Aula.
+Enhancing the readability of search result summaries.
+&lt;i&gt;Proceedings of HCI 2004&lt;/i&gt;, pages 6�10, 2004.">Aula, 2004</a>, <a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#rose2007saa" tiptitle="D.E. Rose, D.�Orr,
+  and R.G.P. Kantamneni.
+Summary attributes and perceived search quality.
+In &lt;i&gt;Proceedings of the 16th International Conference on World Wide Web
+  (WWW&#39;07)&lt;/i&gt;, pages 1201�1202. ACM Press New York, NY, USA, 2007."> Rose et&nbsp;al., 2007</a>). Research
+                also shows that different results lengths are appropriate depending on the type of query and expected
+                result type (<a href="https://searchuserinterfaces.com/book/sui_references.html#lin2003mga" tiptitle="J.�Lin, D.�Quan,
+  V.�Sinha, K.�Bakshi, D.�Huynh, B.�Katz, and D.R. Karger.
+What Makes a Good Answer? The Role of Context in Question Answering.
+&lt;i&gt;Proceedings of Human-Computer Interaction (INTERACT&#39;03)&lt;/i&gt;,
+  2003.">Lin et&nbsp;al., 2003</a>, <a href="https://searchuserinterfaces.com/book/sui_references.html#guan2007"
+                  tiptitle="Z.�Guan and
+  E.�Cutrell.
+An eye tracking study of the effect of target rank on web search.
+In &lt;i&gt;Proceedings of the SIGCHI Conference on Human Factors in Computing
+  Systems (CHI&#39;07)&lt;/i&gt;, pages 417�420. ACM Press New York, NY, USA,
+  2007."> Guan and Cutrell, 2007</a>, <a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#kaisser2008:isr" tiptitle="M.�Kaisser,
+  M.A. Hearst, and J.B. Lowe.
+Improving Search Results Quality by Customizing Summary Lengths.
+&lt;i&gt;Proceedings of the 46th Annual Meeting of the Association for
+  Computational Linguistics: Human Language Technlogies (ACL-HLT&#39;08)&lt;/i&gt;,
+  2008."> Kaisser et&nbsp;al., 2008</a>), although varying the length of results has not been widely adopted in
+                practice. </p>
+              <p>
+                Figure <a href="https://searchuserinterfaces.com/book/sui_ch1_design.html#figure_1.2"><b>1.2</b></a>
+                shows a screenshot from the BioText interface for searching over bioscience literature in which several
+                kinds of document surrogate information are used (<a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#hearst2007bse" tiptitle="M.A. Hearst,
+  A.�Divoli, H.�Guturu, A.�Ksikes, P.�Nakov, M.A. Wooldridge, and J.�Ye.
+BioText Search Engine: beyond abstract search.
+&lt;i&gt;Bioinformatics&lt;/i&gt;, 23(16):2196, 2007.">Hearst et&nbsp;al., 2007</a>). Figures extracted from the
+                articles are shown alongside each search hit, query terms are highlighted (in title) and boldfaced (in
+                abstract and full-text excerpt), and the user can vary how much information is shown in the text
+                excerpts by selecting or deselecting checkboxes for showing the abstract and full-text excerpts. The
+                figure shows a case in which the second word in the query appears in the body of the article, but not in
+                the title or abstract. </p>
+              <p>
+              </p>
+              <div id="index_BioText_1"></div>
+              <p>
+              </p>
+              <div class="figure-2" id="figure_1.2">
+                <img
+                  src="./Design of Search User Interfaces (Ch 1) _ Search User Interfaces _ Marti Hearst _ Cambridge University Press 2009_files/biotext3.png"
+                  width="100%">
+                <div class="caption"> <b>Figure 1.2:</b> Search results in the BioText system (<a
+                    href="https://searchuserinterfaces.com/book/sui_references.html#hearst2007bse" tiptitle="M.A. Hearst,
+  A.�Divoli, H.�Guturu, A.�Ksikes, P.�Nakov, M.A. Wooldridge, and J.�Ye.
+BioText Search Engine: beyond abstract search.
+&lt;i&gt;Bioinformatics&lt;/i&gt;, 23(16):2196, 2007.">Hearst et&nbsp;al., 2007</a>) , in which rich document surrogate
+                  information is shown, including figures extracted from the articles, query term highlighting and
+                  boldfacing, and an option to expand or shorten extracted document summaries. From
+                  http://biosearch.berkeley.edu.
+                </div><!-- end div caption -->
+              </div> <!-- end div figure -->
+              <p>
+              </p>
+              <p>
+              </p>
+            </div> <!-- end div subsection -->
+            <div class="subsection" id="subsection_1.5.3">
+              <h3>1.5.3: Allow Sorting of Results by Various Criteria</h3>
+              <p>
+                Another effective form of feedback in the display of search results allows for the dynamic sorting of
+                search results according to different ranking criteria (e.g., recency, relevance, author, price, etc.).
+                An effective interface for displaying results sortable along several dimensions at once uses a sortable
+                columns format, as seen in email search interfaces, some product search, and some bibliographic search
+                (see Figure <a
+                  href="https://searchuserinterfaces.com/book/sui_ch1_design.html#figure_1.3"><b>1.3</b></a>). With this
+                view, users can sort results according to different criteria, while being able to visually compare those
+                criteria, because the changes are directly visible (<a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#reiterer2000iia" tiptitle="H.�Reiterer,
+  G.�Mu�ler, T.M. Mann, and S.�Handschuh.
+INSYDER � an information assistant for business intelligence.
+&lt;i&gt;Proceedings of the 23th Annual International ACM SIGIR Conference on
+  Research and development in information retrieval (SIGIR&#39;00)&lt;/i&gt;, pages
+  112�119, 2000.">Reiterer et&nbsp;al., 2000</a>, <a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#cutrell2006fff" tiptitle="E.�Cutrell,
+  D.�Robbins, S.�Dumais, and R.�Sarin.
+Fast, flexible filtering with Phlat.
+&lt;i&gt;Proceedings of the SIGCHI Conference on Human Factors in Computing
+  Systems (CHI&#39;06)&lt;/i&gt;, pages 261�270, 2006."> Cutrell et&nbsp;al., 2006b</a>). This kind of view is
+                typically more effective than showing choices hidden behind drop-down menus. Grouping search results by
+                categories is also an effective form of feedback, as discussed in the section below on integrating
+                navigation and search. </p>
+              <p>
+              </p>
+              <div id="index_drop-down menus_1"></div>
+              <div id="index_email collections_1"></div>
+              <div id="index_sortable column views_1"></div>
+              <div id="index_DOE OSTI_1"></div>
+              <p>
+              </p>
+              <div class="figure-2" id="figure_1.3">
+                <img
+                  src="./Design of Search User Interfaces (Ch 1) _ Search User Interfaces _ Marti Hearst _ Cambridge University Press 2009_files/doecolumns.png"
+                  width="100%">
+                <div class="caption"> <b>Figure 1.3:</b> An example search results listing, on the query <b> bore hole
+                    gravity</b>, that allows sorting results listings columns representing bibliographic fields (author,
+                  title, date, etc.). From the Energy Citations Database published by the U.S. Department of Energy
+                  (DOE) Office of Scientific and Technical Information (OSTI), http://www.osti.gov/energycitations.
+                </div><!-- end div caption -->
+              </div> <!-- end div figure -->
+              <p>
+              </p>
+              <p>
+              </p>
+              <p>
+              </p>
+              <div id="index_search results presentations_2"></div>
+              <p>
+              </p>
+            </div> <!-- end div subsection -->
+            <div class="subsection" id="subsection_1.5.4">
+              <h3>1.5.4: Show Query Term Suggestions</h3>
+              <p>
+              </p>
+              <p>
+                After a user has issued a query, it has been shown useful to provide feedback in the form of
+                automatically-generated query term suggestions and refinements. These include spelling correction
+                suggestions as well as suggestions of related or alternative query terms. The phrase <i> term
+                  expansion</i> is usually applied to tools that suggest alternative wordings. Usability studies are
+                generally positive as to the efficacy of term suggestions when users are not required to make relevance
+                judgements and do not have to choose among too many terms (<a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#bruza2000iis" tiptitle="P.�Bruza,
+  R.�Mcarthur, and S.�Dennis.
+Interactive Internet Search: Keyword, Directory And Query Reformulation
+  Mechanisms Compared.
+&lt;i&gt;Proceedings of the 23th Annual International ACM SIGIR Conference on
+  Research and development in information retrieval (SIGIR&#39;00)&lt;/i&gt;, pages
+  280�287, 2000.">Bruza et&nbsp;al., 2000</a>, <a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#anick2003utf" tiptitle="P.�Anick.
+Using Terminological Feedback For Web Search Refinement: A Log-Based Study.
+&lt;i&gt;Proceedings of the 26th Annual International ACM SIGIR Conference on
+  Research and development in information retrieval (SIGIR&#39;03)&lt;/i&gt;, pages
+  88�95, 2003."> Anick, 2003</a>, <a href="https://searchuserinterfaces.com/book/sui_references.html#white2007sup"
+                  tiptitle="R.W. White,
+  M.�Bilenko, and S.�Cucerzan.
+Studying the Use of Popular Destinations to Enhance Web Search Interaction.
+&lt;i&gt;Proceedings of the 30th Annual International ACM SIGIR Conference on
+  Research and development in information retrieval (SIGIR&#39;07)&lt;/i&gt;,
+  2007."> White et&nbsp;al., 2007</a>, <a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#divoli2008esg" tiptitle="A.�Divoli, M.A.
+  Hearst, and M.A. Wooldridge.
+Evidence for showing gene/protein name suggestions in bioscience literature
+  search interfaces.
+&lt;i&gt;Pacific Symposium on Biocomputing&lt;/i&gt;, 568:79, 2008."> Divoli et&nbsp;al., 2008</a>). A study of session
+                logs of the Dogpile Web search engine showed found that 8.4% of all queries were generated by the
+                reformulation assistant provided (<a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#jansen2007wsi" tiptitle="B.J. Jansen,
+  A.�Spink, and S.�Koshman.
+Web searcher interaction with the Dogpile.com metasearch engine.
+&lt;i&gt;Journal of the American Society for Information Science and
+  Technology&lt;/i&gt;, 58(5):744�755, 2007.">Jansen et&nbsp;al., 2007b</a>). Figure <a
+                  href="https://searchuserinterfaces.com/book/sui_ch1_design.html#figure_1.4"><b>1.4</b></a> shows an
+                example of a term expansion interface provided by Yahoo. </p>
+              <p>
+              </p>
+              <div id="index_Yahoo_1"></div>
+              <div id="index_query term suggestions_1"></div>
+              <div id="index_term expansions_1"></div>
+              <p>
+                A related recent development in rapid and effective user feedback is an interface that suggests a list
+                of query terms dynamically, <i> as the user types the query</i>, and that match the query or are
+                semantically similar to it in some way. (This is sometimes referred to as <i> incremental search</i>.)
+                For example, typing the letters <b> ba</b> on the Ask.com Web search engine shows query suggestions
+                including <i> baby names, barnes and nobel, barack obama</i>, and <i> bank of america</i>. Adding an <b>
+                  n</b> to make a query of <b> ban</b> changes the suggestions to include <i> banana republic,
+                  bankruptcy</i>, and <i> bangladesh</i>. The query suggestions are often tailored to the underlying
+                information collection. For example, a site that shows statistics about different airports
+                (flightstats.com) dynamically adjusts airport names as the user types in letters. Beginning with <b>
+                  s</b> shows hits not only on airports whose three-letter code begins with �s�, but also for airports
+                whose city name or country name begins with this letter. (These include Palma Mallorca airport in Spain,
+                Suvarnabhumi airport in Bangkok, and SFO in San Francisco, CA.) Adding the letter <b> f</b> eliminates
+                all of these except SFO, but shows less frequented airports such as Sfax El Maou airport in Tunisia.
+                Dynamic query term suggestions are a promising intermediate solution between requiring the user to think
+                of terms of interest (and how to spell them) and navigating a long list of term suggestions. </p>
+              <p>
+              </p>
+              <div id="index_Ask_1"></div>
+              <div id="index_dynamic term suggestions_1"></div>
+              <div id="index_dynamic term suggestions_2"></div>
+              <p>
+              </p>
+              <p>
+              </p>
+              <div class="figure-2" id="figure_1.4">
+                <img
+                  src="./Design of Search User Interfaces (Ch 1) _ Search User Interfaces _ Marti Hearst _ Cambridge University Press 2009_files/yahoo-search-assist.png"
+                  width="100%">
+                <div class="caption"> <b>Figure 1.4:</b> Example of an interface for showing two types of search
+                  assistance, from Yahoo. The left hand column shows suggestions dynamically as the user types their
+                  query. These suggestions usually match the prefix characters of the query. The right hand column shows
+                  suggestions of related terms after the query has been submitted. These need not contain characters
+                  from the original query. (Reproduced with permission of Yahoo! Inc. 2009 Yahoo! Inc. YAHOO! and the
+                  YAHOO! logo are registered trademarks of Yahoo! Inc.)
+                </div><!-- end div caption -->
+              </div> <!-- end div figure -->
+              <p>
+                Returning to Figure <a
+                  href="https://searchuserinterfaces.com/book/sui_ch1_design.html#figure_1.4"><b>1.4</b></a>, this
+                search assistance tool uses a �sliding tray� that opens automatically based on heuristics corresponding
+                to user behavior (<a href="https://searchuserinterfaces.com/book/sui_references.html#anick2008als"
+                  tiptitle="P.�Anick
+  and R.G.P. Kantamneni.
+A longitudinal study of real-time search assistance adoption.
+In &lt;i&gt;Proceedings of the 31st Annual International ACM SIGIR Conference on
+  Research and development in information retrieval (SIGIR&#39;08)&lt;/i&gt;, pages
+  701�702, New York, NY, USA, 2008. ACM.">Anick and Kantamneni, 2008</a>). For instance, if the user pauses in typing
+                before hitting the <b> Enter</b> key, the tray will slide out showing dynamic query suggestions. The
+                view shown here appears after a query has been entered, and the left hand column of suggestions in
+                Figure <a href="https://searchuserinterfaces.com/book/sui_ch1_design.html#figure_1.4"><b>1.4</b></a>
+                shows term suggestions that are related to the query. </p>
+              <p>
+              </p>
+              <div id="index_Yahoo_2"></div>
+              <p>
+                A log study on 100,000 visitors to the Yahoo site over 17 weeks found that this tool was heavily used,
+                with 30% of those exposed to it choosing to interact with it during the first exposure, increasing to
+                37% by the 17th week (<a href="https://searchuserinterfaces.com/book/sui_references.html#anick2008als"
+                  tiptitle="P.�Anick
+  and R.G.P. Kantamneni.
+A longitudinal study of real-time search assistance adoption.
+In &lt;i&gt;Proceedings of the 31st Annual International ACM SIGIR Conference on
+  Research and development in information retrieval (SIGIR&#39;08)&lt;/i&gt;, pages
+  701�702, New York, NY, USA, 2008. ACM.">Anick and Kantamneni, 2008</a>). There was also a high degree of iterative
+                interaction with the tool. However, a small eye-tracking study showed that the interface includes a
+                design error that is often seen in experimental search interfaces (<a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#anick2008als" tiptitle="P.�Anick
+  and R.G.P. Kantamneni.
+A longitudinal study of real-time search assistance adoption.
+In &lt;i&gt;Proceedings of the 31st Annual International ACM SIGIR Conference on
+  Research and development in information retrieval (SIGIR&#39;08)&lt;/i&gt;, pages
+  701�702, New York, NY, USA, 2008. ACM.">Anick and Kantamneni, 2008</a>). In this error, the interface showed two
+                kinds of hints next to each other. Users are unlikely to understand the difference in meaning between
+                the types of suggestions in the left hand and right hand columns, because the suggestions themselves are
+                similar and users may not know, or need to know, the difference between dynamic suggestions and
+                after-query suggestions. (A smaller problem is that only one column has a visible label.) A better
+                design would be to show the dynamic suggestions as the query is being typed, and then replace these with
+                the related term suggestions after the query is entered (via hitting the return key or selecting the <i>
+                  Search</i> button). When the user resumes typing, the dynamic suggestions should replace the related
+                terms. </p>
+              <p>
+                It is generally not a good idea to make people remove terms to increase relevance. For instance, <a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#ahn2007" tiptitle="J-S. Ahn, P.�Brusilovsky,
+  D.�He, and S.Y. Syn.
+Open user profiles for adaptive news systems: Help or harm?
+&lt;i&gt;Proceedings of the 16th International Conference on World Wide Web
+  (WWW&#39;07)&lt;/i&gt;, 2007.">Ahn et&nbsp;al., 2007</a> found that keyword removal caused about four times more harm
+                than adding keywords for building user profiles. The essence of the problem is that the space of what is
+                not relevant is far larger than the space of what is relevant. This is not to say that adding a �NOT�
+                operator to a query is never useful, but rather that an interface should not be founded on the idea that
+                users will remove irrelevant terms or documents. </p>
+              <p>
+              </p>
+              <div id="index_keyword removal_1"></div>
+              <p>
+              </p>
+            </div> <!-- end div subsection -->
+            <div class="subsection" id="subsection_1.5.5">
+              <h3>1.5.5: Use Relevance Indicators Sparingly</h3>
+              <p>
+                In the past it was common for search engines to show a numerical score or graphical bars or icons such
+                as a row of stars alongside the document surrogate to indicate the relevance score for the documents (<a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#shneiderman1997csu" tiptitle="B.�Shneiderman, D.�Byrd, and WB�Croft.
+Clarifying Search: A User-Interface Framework for Text Searches.
+&lt;i&gt;DL Magazine&lt;/i&gt;, January 1997.">Shneiderman et&nbsp;al., 1997</a>). However, these have fallen out of
+                favor, most likely because the meaning of the relevance score is opaque to the users (<a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#white2007sup" tiptitle="R.W. White,
+  M.�Bilenko, and S.�Cucerzan.
+Studying the Use of Popular Destinations to Enhance Web Search Interaction.
+&lt;i&gt;Proceedings of the 30th Annual International ACM SIGIR Conference on
+  Research and development in information retrieval (SIGIR&#39;07)&lt;/i&gt;,
+  2007.">White et&nbsp;al., 2007</a>) , and the vertical position on the page is a strong and effective signal of the
+                relative relevance of the results. It should be noted that graphical indicators of other kinds of
+                information -- such as using a line of stars to indicate how favorably reviewed an item is -- can be
+                quite useful. </p>
+              <p>
+                Innovative visualization techniques for graphically showing the distribution of the query terms within
+                the retrieved documents have been developed (<a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#hearst95b" tiptitle="M.A. Hearst.
+TileBars: Visualization of Term Distribution Information in Full Text
+  Information Access.
+In &lt;i&gt;Proceedings of the SIGCHI Conference on Human Factors in Computing
+  Systems (CHI&#39;95)&lt;/i&gt;, Denver, CO, May 1995.">Hearst, 1995</a>, <a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#reiterer2005aic" tiptitle="H.�Reiterer,
+  G.�Tullius, and T.M. Mann.
+Insyder: a content-based visual-information-seeking system for the web.
+&lt;i&gt;International Journal on Digital Libraries&lt;/i&gt;, 5(1):25�41,
+  2005."> Reiterer et&nbsp;al., 2005</a>, <a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#meredith06" tiptitle="D.N. Meredith
+  and J.H. Pieper.
+Beta: Better extraction through aggregation.
+In &lt;i&gt;Proceedings of the 29th Annual International ACM SIGIR Conference on
+  Research and development in information retrieval (SIGIR&#39;06) Workshop on
+  Faceted Search&lt;/i&gt;, Seattle, WA, August 2006."> Meredith and Pieper, 2006</a>), but are used primarily in text
+                analysis interfaces rather than in standard search. </p>
+              <p>
+              </p>
+              <div id="index_visualization_1"></div>
+              <p>
+              </p>
+            </div> <!-- end div subsection -->
+            <div class="subsection" id="subsection_1.5.6">
+              <h3>1.5.6: Support Rapid Response</h3>
+              <p>
+                For search interfaces, rapid response time is critical to support effective feedback. A perceivable lag
+                interrupts peoples' thought processes; rapid response allows searchers to work with �flow.� Providing
+                highly responsive interactive results is important for dynamic search results suggestions, and fast
+                response time for query reformulation allows the user to try multiple queries rapidly. If the system
+                responds with little delay, the user does not feel penalized for trying inaccurate or general queries
+                that are �in the ballpark� but not quite right. This allows the user to rapidly move closer to their
+                goal and learn more about their search topic with each query. </p>
+              <p>
+              </p>
+              <p>
+                Research suggests that when rapid responses are not available, search strategies change. For instance, a
+                search engine for users in the developing world in which the round trip for retrieval results can be a
+                day or more requires accurate, thoughtful query formulation (<a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#thies2002sww" tiptitle="W.�Thies,
+  J.�Prevost, T.�Mahtab, G.�T. Cuevas, S.�Shakhshir, A.�Artola, B.�D. Vo,
+  Y.�Litvak, S.�Chan, S.�Henderson, M.�Halsey, L.�Levison, and S.�Amarasinghe.
+Searching The World Wide Web In Low-Connectivity Communities.
+&lt;i&gt;Proceedings of the 11th International Conference on World Wide Web
+  (WWW&#39;02)&lt;/i&gt;, 2002.">Thies et&nbsp;al., 2002</a>). It should also be noted that for some specialized search
+                applications in which the results are the final desired information, users are not unduly penalized by
+                having to wait, such as for systems that search for airline flights. These sites wisely tend to show a
+                graphical animation while processing the user's request, to reduce feelings of impatience. </p>
+              <p>
+              </p>
+              <p>
+              </p>
+            </div> <!-- end div subsection -->
+          </div> <!-- end div section -->
+          <div class="section" id="section_1.6">
+            <h2>1.6: Balance User Control with Automated Actions</h2>
+            <p>
+            </p>
+            <p>
+            </p>
+            <p>
+              <a href="https://searchuserinterfaces.com/book/sui_references.html#greene2000pao" tiptitle="S.�Greene,
+  G.�Marchionini, C.�Plaisant, and B.�Shneiderman.
+Previews and Overviews in Digital Libraries: Designing Surrogates to Support
+  Visual Information Seeking.
+&lt;i&gt;Journal of the American Society for Information Science&lt;/i&gt;,
+  51(4):380�393, 2000.">Greene et&nbsp;al., 2000</a> write that �Users prefer comprehensible, predictable, and
+              controllable environments.� This is a good design guideline in general. However, in the design of
+              technology, there is often a tradeoff between the system taking control for the user versus the user being
+              in control of details of the system's behavior. For example, millions of people enjoy the ease and
+              convenience of taking snapshots with point-and-shoot digital cameras, where there is no need to fuss with
+              the focus, shutter speed, or lighting because the camera automatically figures out the settings. However,
+              on those occasions in which the user wants to override the camera's default behavior (say, in very low
+              light), it can be difficult to quickly determine how to accomplish this. Similarly, in the design of
+              search algorithms and interfaces, there is a delicate balance between clever but opaque operations that
+              correctly anticipate searcher's needs most of the time and less powerful or less effective designs that
+              are however easily understandable and give the user control over system behavior.
+            </p>
+            <p>
+              Below are two important types of search interface design decisions that must consider the tradeoff between
+              opaque system control and transparent user control: results ordering and query transformations. </p>
+            <p>
+            </p>
+            <p>
+            </p>
+            <div class="subsection" id="subsection_1.6.1">
+              <h3>1.6.1: Rank Ordering in Web Search</h3>
+              <p>
+                The most prominent case of opacity in the operation of search interfaces is the rank ordering of
+                retrieval results. </p>
+              <p>
+                As discussed above, most users have little understanding of how search technology works, and the
+                mechanisms behind search results ordering are especially mysterious. Early Web search engines used a
+                variation of vector-based statistical ranking, which is difficult to understand, in part because the
+                system might show a document that has many hits on a rare term higher than a document that contains a
+                few hits on every term in the query (<a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#nytimes98" tiptitle="Matt Lake.
+Desperately Seeking Susan OR Suzie NOT Sushi.
+&lt;i&gt;The New York Times&lt;/i&gt;, September 3, September 3 1998.">Lake, 1998</a>). Furthermore, Web queries
+                usually contain only a few words, while statistical ranking was originally designed for paragraph-length
+                queries. </p>
+              <p>
+              </p>
+              <div id="index_paragraph-length queries_1"></div>
+              <div id="index_statistical ranking_1"></div>
+              <p>
+                Sometime in the late 1990's, the Hotbot search engine introduced conjunctive (AND-based) query analysis
+                for Web search ranking, meaning that every word in the query must be present in the document in order
+                for that document to be shown (<a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#glossbrenner1999sea" tiptitle="A.�Glossbrenner and E.�Glossbrenner.
+&lt;i&gt;Search Engines and the World Wide Web&lt;/i&gt;, PeachPit Press, 1999.">Glossbrenner, 1999</a>). This behavior
+                is more transparent than the statistical approach because the searcher knows that every page retrieved
+                contains at least one instance of every word they typed. Behind the scenes, the system may give more
+                weight to pages in which the terms occur more frequently, but the user does not need to know that detail
+                in order for the retrieval strategy to be understandable. Also in the late 1990's, Google improved
+                conjunctive ranking by assigning higher weight to documents in which query terms co-occurred in close
+                proximity to one another, which had been shown by others to improve precision (<a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#hearst96a" tiptitle="M.A. Hearst.
+Improving full-text precision using simple query constraints.
+In &lt;i&gt;Proceedings of the Fifth Annual Symposium on Document Analysis and
+  Information Retrieval (SDAIR&#39;96)&lt;/i&gt;, Las Vegas, NV, 1996.">Hearst, 1996</a>, <a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#clarke96" tiptitle="C.L.A. Clarke, G.V.
+  Cormack, and F.J. Burkowski.
+Shortest substring ranking (multitext experiments for TREC-4).
+In Donna Harman, editor, &lt;i&gt;Proceedings of the Fifth Text REtrieval
+  Conference (TREC-5)&lt;/i&gt;. 1996."> Clarke et&nbsp;al., 1996</a>), and which has the advantage of producing more
+                useful document summaries (<a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#tombros1998aqb" tiptitle="A.�Tombros and M.�Sanderson.
+Advantages of query biased summaries in information retrieval.
+&lt;i&gt;Proceedings of the 21st Annual International ACM SIGIR Conference on
+  Research and development in information retrieval (SIGIR&#39;98)&lt;/i&gt;, pages
+  2�10, 1998.">Tombros and Sanderson, 1998</a>). Google also incorporated a �popularity� measure, PageRank (<a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#page1998pcr" tiptitle="L.�Page, S.�Brin,
+  R.�Motwani, and T.�Winograd.
+The PageRank Citation Ranking: Bringing Order to the Web.
+Technical report, Stanford Digital Library Technologies Project, 1998.">Page et&nbsp;al., 1998</a>). The fact that
+                popular web pages appear higher in the results is understandable for lay users even though the algorithm
+                for computing popularity would not be widely understood. </p>
+              <p>
+              </p>
+              <div id="index_precision_2"></div>
+              <div id="index_conjunction-based queries_1"></div>
+              <div id="index_proximity of terms_1"></div>
+              <div id="index_summaries_2"></div>
+              <div id="index_popularity measure_1"></div>
+              <div id="index_PageRank_1"></div>
+              <div id="index_Google_2"></div>
+              <p>
+                Although AND-based ranking has been quite effective, today the pendulum is swinging the other way.
+                Sophisticated users are issuing longer queries, and the rise of natural language search engines is
+                encouraging longer and more complex queries. As queries get longer, it becomes necessary to relax the
+                constraint that all words appear in the retrieved documents, or at least to downweight their importance
+                in proximity to the content words. Today, a user can enter a query <b> typing while recovering from
+                  clavical surgery</b> into Google and it successfully finds relevant documents by ignoring the role of
+                the syntactic structuring words <b> while</b> and <b> from</b> and returning pages in which <b>
+                  recovering</b> occurs only in hyperlinks pointing to the page. In order for this kind of sophisticated
+                processing to avoid the confusing behavior of earlier statistical algorithms, the lack of transparency
+                must be offset by the relevance and meaningfulness of the returned results. </p>
+              <p>
+              </p>
+              <div id="index_Google_3"></div>
+              <p>
+                Perhaps the most understandable and transparent way to order search results is according to how recently
+                they appeared. In fact, for some information collections, such as news, chronological ordering can be
+                preferred over rank ordering. <a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#dumais2003svs" tiptitle="S.�Dumais,
+  E.�Cutrell, Jj�Cadiz, G.�Jancke, R.�Sarin, and D.C. Robbins.
+Stuff I&#39;ve Seen: A System For Personal Information Retrieval And Re-Use.
+&lt;i&gt;Proceedings of the 26th Annual International ACM SIGIR Conference on
+  Research and development in information retrieval (SIGIR&#39;03)&lt;/i&gt;, pages
+  72�79, 2003.">Dumais et&nbsp;al., 2003</a> found that users preferred chronological order over rank order when
+                searching over their personal information. Bioscience researchers often prefer to see scientific
+                articles presented according to recency. However, for web search, relevance ranking is a necessity
+                because time of first appearance for a Web page is of secondary importance in most cases. </p>
+              <p>
+              </p>
+              <div id="index_chronological ordering_1"></div>
+              <div id="index_bioscience collection_1"></div>
+              <p>
+              </p>
+            </div> <!-- end div subsection -->
+            <div class="subsection" id="subsection_1.6.2">
+              <h3>1.6.2: Query Transformations</h3>
+              <p>
+              </p>
+              <div id="index_query transformations_1"></div>
+              <p>
+                Another important issue in the tradeoff between system cleverness and user control lies with query
+                transformations. Some search engines make subtle changes to queries to improve results. For example,
+                Microsoft's web search automatically converts words like <b> vs.</b> to <b> versus</b>. The lack of user
+                control in this feature is mitigated by the fact that this transformation nearly always matches the
+                searcher's intention. As another example, Google returns pages that contain people's names for which the
+                middle initial is missing, even if the original query specifies the middle initial. Although a useful
+                feature, this could frustrate a searcher who is trying to distinguish between two people with similar
+                names. </p>
+              <p>
+              </p>
+              <div id="index_Microsoft_1"></div>
+              <div id="index_Google_4"></div>
+              <p>
+                A classic case of system behavior that is opaque to system users is the elimination of <i> stopwords</i>
+                from user queries. (Stopwords are the most common words in the language, usually what linguists call
+                �closed-class� words in that new ones rarely enter the language. Examples from English are articles such
+                as <i> a, an, the</i> and prepositions such as <i> in, on</i>.) In a famous example in the early days of
+                Web search, a searcher who typed <b> �to be or not to be�</b> in a search engine would be shocked to be
+                served empty results. In 1996, a review of eight major search engines found that only AltaVista could
+                handle the Hamlet quote; all others ignored stopwords (<a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#peterson1997eis" tiptitle="R.E. Peterson.
+Eight Internet Search Engines Compared.
+&lt;i&gt;First Monday&lt;/i&gt;, 2(2), 1997.">Peterson, 1997</a>, <a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#sherman01" tiptitle="C.�Sherman.
+Google goes for stop words, December 3 2001.
+http://searchenginewatch.com/2158311."> Sherman, 2001</a>). (Stopword elimination is common in statistical ranking
+                systems for which a paragraph-length query is assumed; not indexing stopwords by position results in
+                significant savings in indexing time and disk space.) Today, this problem is solved on all the major Web
+                search engines. </p>
+              <p>
+              </p>
+              <div id="index_AltaVista_1"></div>
+              <div id="index_stopwords_1"></div>
+              <p>
+                The application of morphological analysis (stemming) has long yielded mixed results in the information
+                retrieval literature: in some cases it helps, and in others it degrades search results. From a user
+                expectations perspective, on the one hand, searchers express surprise if the computer is not �smart�
+                enough to do simple transformations, such as automatically converting <b> woman's rights</b> in the
+                query to match <b> women's rights</b> in documents (<a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#twidale1998dis" tiptitle="M.�Twidale
+  and D.�Nichols.
+Designing Interfaces to Support Collaboration in Information Retrieval.
+&lt;i&gt;Interacting with Computers&lt;/i&gt;, 10(2):177�193, 1998.">Twidale and Nichols, 1998</a>). But on the other
+                hand, if morphological analysis is done too aggressively, the meaning of the query can be distorted. For
+                example, Google converts the word <b> typing</b> to <b> type</b> in the query <b> typing after clavicle
+                  surgery</b>, which yields some results that do not discuss the act of typing. These effects are mild
+                so long as the stemming is applied lightly, and a mix of the word forms is allowed to contribute to the
+                results. But if the system consistently overrules the user's intention, the user may become justifiably
+                frustrated. </p>
+              <p>
+              </p>
+              <div id="index_morphological analysis_1"></div>
+              <div id="index_Google_5"></div>
+              <p>
+                In the case of automatic spelling suggestions, the system should offer the choice to the user without
+                forcing an acceptance of an alternative spelling, in case the system's correction does not match the
+                user's intent. But on the other hand, if the user makes a blatantly incorrect typographical error, it
+                can be annoying to see only irrelevant results, and the system may return low-quality Web pages. To
+                balance this tradeoff, when encountering what the system believes is an erroneously spelled query term,
+                many Web search engines show some hits that contain words that they guess are the correct spelling
+                interwoven with other hits that contain the purportedly incorrect spelling. </p>
+              <p>
+              </p>
+              <div id="index_query transformations_2"></div>
+              <p>
+              </p>
+            </div> <!-- end div subsection -->
+          </div> <!-- end div section -->
+          <div class="section" id="section_1.7">
+            <h2>1.7: Reduce Short-Term Memory Load</h2>
+            <p>
+            </p>
+            <p>
+              The interface guideline �reduce the user's memory load� is very important for information-rich system
+              interfaces. The main idea behind this heuristic is to show users relevant information rather than require
+              them to remember or keep track of it. Several methods applicable to search interfaces are described in the
+              subsections below. </p>
+            <p>
+            </p>
+            <div class="figure-2" id="figure_1.5">
+              <img
+                src="./Design of Search User Interfaces (Ch 1) _ Search User Interfaces _ Marti Hearst _ Cambridge University Press 2009_files/nytimes-searchbox.png"
+                width="100%">
+              <div class="caption"> <b>Figure 1.5:</b> Example of a query form that provides a reminder of which set of
+                content is being searched over, from <i> The New York Times</i>.
+              </div><!-- end div caption -->
+            </div> <!-- end div figure -->
+            <p>
+            </p>
+            <div class="subsection" id="subsection_1.7.1">
+              <h3>1.7.1: Suggest the Search Action in the Entry Form</h3>
+              <p>
+                A useful interface trope that has arisen recently is, rather than showing a blank entry form, the
+                designer places text within the entry form to indicate what action will result from using that form.
+                This text is usually shown in grayed-out font, to signal that it is intended to be replaced by the
+                user's text. (The text within the form disappears when the user clicks in the form.) This is especially
+                useful in search interfaces as a way to indicate that the user would be searching over an alternative
+                collection, or when attempting to provide a �search within these results� feature. The lower right hand
+                corner of Figure <a
+                  href="https://searchuserinterfaces.com/book/sui_ch1_design.html#figure_1.5"><b>1.5</b></a> shows an
+                example from the Web site of <i> The New York Times</i>, that makes it clear that a query in that entry
+                form searches over the user's saved pages, as opposed to searching over the site as a whole. This design
+                works in part because the user must look at the text in the entry form in order to select the form and
+                begin typing; it demands the user's attention, but is not distracting because it provides the
+                information exactly at the point in the user's workflow that it is needed at. </p>
+              <p>
+              </p>
+              <div id="index_search within_1"></div>
+              <div id="index_greyed-out text_1"></div>
+              <p>
+              </p>
+              <p>
+                In the upper right hand corner is shown a more standard approach to allowing users to choose between
+                collections. It shows a search box with a radio button that selects which collection to search over.
+                Most studies suggest that users do not notice or change the choices in this type of interface, in part
+                because they do not notice the option while they are entering their query. A radio button or other
+                choice selector, such as a drop-down menu, is more likely to be noticed after the query is issued when
+                retrieval results are being viewed. Thus, selectors for sorting the search results (by date, by price,
+                etc.) after the query are used with some frequency. </p>
+              <p>
+              </p>
+              <div id="index_drop-down menus_2"></div>
+              <p>
+              </p>
+            </div> <!-- end div subsection -->
+            <div class="subsection" id="subsection_1.7.2">
+              <h3>1.7.2: Support Simple History Mechanisms</h3>
+              <p>
+              </p>
+              <div id="index_search history_1"></div>
+              <p>
+                Research shows that people are highly likely to revisit information they have viewed in the past and to
+                re-issue queries that they have written in the past (<a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#jones2002oft" tiptitle="W.�Jones,
+  S.�Dumais, and H.�Bruce.
+Once Found, What Then? A Study Of Keeping Behaviors In The Personal Use Of
+  Web Information.
+&lt;i&gt;Proceedings Of The American Society For Information Science And
+  Technology&lt;/i&gt;, 39(1):391�402, 2002.">Jones et&nbsp;al., 2002</a>, <a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#milicfrayling2004ssu" tiptitle="N.�Milic-Frayling, R.�Jones, K.�Rodden, G.�Smyth,
+  A.�Blackwell, and R.�Sommerer.
+Smartback: supporting users in back navigation.
+&lt;i&gt;Proceedings of the 13th International Conference on World Wide Web
+  (WWW&#39;04)&lt;/i&gt;, pages 63�71, 2004."> Milic-Frayling et&nbsp;al., 2004</a>). In one large study, 40% of
+                people's search results clicks were on pages that they had clicked on before over the course of a year,
+                with 71% of these using the identical query string as before (<a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#teevan2006hri" tiptitle="J.�Teevan,
+  E.�Adar, R.�Jones, and M.�Potts.
+History repeats itself: repeat queries in Yahoo&#39;s logs.
+&lt;i&gt;Proceedings of the 29th Annual International ACM SIGIR Conference on
+  Research and development in information retrieval (SIGIR&#39;06)&lt;/i&gt;, pages
+  703�704, 2006.">Teevan et&nbsp;al., 2006a</a>). In a survey associated with this study, 17% of interviewees reported
+                �not being able to return to a page I once visited� as one of the �biggest problems in using the web.�
+                Therefore, allowing search over recently viewed information can improve a user's productivity (<a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#dumais2003svs" tiptitle="S.�Dumais,
+  E.�Cutrell, Jj�Cadiz, G.�Jancke, R.�Sarin, and D.C. Robbins.
+Stuff I&#39;ve Seen: A System For Personal Information Retrieval And Re-Use.
+&lt;i&gt;Proceedings of the 26th Annual International ACM SIGIR Conference on
+  Research and development in information retrieval (SIGIR&#39;03)&lt;/i&gt;, pages
+  72�79, 2003.">Dumais et&nbsp;al., 2003</a>). Web browsers, as opposed to search engines, can provide much of this
+                functionality. For example, the Chrome Web browser supports information revisiting by showing a grid of
+                thumbnail images representing a user's most frequently visited web pages, and the drop-down menu from
+                the many browser Web address bars shows recently visited pages. Search engines themselves can provide
+                query history, as well as history of previously selected pages if the user agrees to having that
+                information recorded. The PubMed bioscience journal service shows recently issued queries and visited
+                documents in a simple history display (see Figure <a
+                  href="https://searchuserinterfaces.com/book/sui_ch1_design.html#figure_1.6"><b>1.6</b></a>).
+                Similarly, many shopping Web site show recently viewed items in a graphical form. Thumbnail images have
+                also been experimented with in search results listing, both for reminding searchers of previously
+                visited pages and for suggesting information about the hit, such as its genre. </p>
+              <p>
+              </p>
+              <div id="index_drop-down menus_3"></div>
+              <div id="index_bioscience collection_2"></div>
+              <div id="index_PubMed_1"></div>
+              <div id="index_revisitation_1"></div>
+              <div id="index_thumbnails_1"></div>
+              <div id="index_query history_1"></div>
+              <div id="index_web browsers_1"></div>
+              <div id="index_Chrome_1"></div>
+              <p>
+              </p>
+              <div class="figure-2" id="figure_1.6">
+                <img
+                  src="./Design of Search User Interfaces (Ch 1) _ Search User Interfaces _ Marti Hearst _ Cambridge University Press 2009_files/pubmed-recentactivity.png"
+                  width="100%">
+                <div class="caption"> <b>Figure 1.6:</b> The PubMed interface, published by the U.S. National Library of
+                  Medicine, for showing recent queries and recently accessed documents in a simple history display.
+                </div><!-- end div caption -->
+              </div> <!-- end div figure -->
+              <p>
+                In Web sites that integrate category selection with search, a history mechanism called <i>
+                  breadcrumbs</i> is used for keeping track of the sequence of navigation operations that the user has
+                taken to arrive at the current view of objects (discussed in more detail below). </p>
+              <p>
+              </p>
+              <div id="index_breadcrumbs_1"></div>
+              <div id="index_search history_2"></div>
+              <p>
+              </p>
+            </div> <!-- end div subsection -->
+            <div class="subsection" id="subsection_1.7.3">
+              <h3>1.7.3: Integrate Navigation and Search</h3>
+              <p>
+              </p>
+              <p>
+              </p>
+              <div id="index_navigation_1"></div>
+              <p>
+                A well-established principle of human memory is that it is often easier to recognize a word or name than
+                it is to think up that word. Thus in many situations it is useful to prompt the searcher with
+                information related to their information need. Browsable information structures, such as links on a Web
+                site or a table of contents for a book, give an overview of the contents of a collection, allowing the
+                searcher to navigate to the information of interest by following links or narrowing by selecting
+                categories. Information structures can also impose an organization on the results of search. To be fully
+                effective, navigation interfaces should allow the user to interleave keyword queries within existing
+                information structures, smoothly integrating navigation with search. This means that after a keyword
+                search, results should be organized into the navigation structure, and that after navigation steps,
+                keyword search should be available over the current subset of information items. </p>
+              <p>
+              </p>
+              <div id="index_navigation structure_1"></div>
+              <div id="index_recognition over recall_1"></div>
+              <div id="index_keyword queries_3"></div>
+              <p>
+                In search interfaces, category systems are the main tool for navigating information structures and
+                organizing search results. A category system is a set of meaningful labels organized in such a way as to
+                reflect the concepts relevant to a domain. In search interfaces, categories are typically used either
+                for selecting a subset of documents out from the rest, thus narrowing the results, or for grouping
+                documents, dividing them into (potentially overlapping) subsets, but keeping the documents visible. They
+                can also be used for ordering and sorting search results. </p>
+              <p>
+              </p>
+              <div id="index_categories_1"></div>
+              <p>
+                Category system structure in search interfaces is usually one of <i> flat</i>, <i> hierarchical</i>, or
+                <i> faceted</i>. A flat list of categories works well for presenting a list of choices with which to
+                narrow the contents of a collection, but needs to be limited to a small set in order to be scannable.
+                Hierarchical (or tree-structured) category systems are useful and can be easy to understand for
+                relatively simple information structures. However, a problem with assigning documents to single
+                categories within a hierarchy is that many information items are best described by multiple different
+                categories simultaneously.
+              </p>
+              <p>
+              </p>
+              <p>
+                This use of <i> hierarchical faceted metadata</i> provides a usable method for allowing users to browse
+                information collections according to multiple categories simultaneously (<a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#hearst2000ngw" tiptitle="M.A. Hearst.
+Next Generation Web Search: Setting Our Sites.
+&lt;i&gt;IEEE Data Engineering Bulletin&lt;/i&gt;, 23(3):38�48, 2000.">Hearst, 2000</a>, <a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#hearst02" tiptitle="M.A. Hearst,
+  J.�English, R.�Sinha, K.�Swearingen, and K.-P. Yee.
+Finding the flow in web site search.
+&lt;i&gt;Communications of the ACM&lt;/i&gt;, 45(9), September 2002."> Hearst et&nbsp;al., 2002</a>). The main idea is
+                to build a set of category hierarchies, each of which corresponds to a different facet (dimension or
+                feature type) that is relevant to the collection to be navigated. Each facet has a set of labels
+                associated with it, and if this set is large, it may be organized into a hierarchy. After the facet
+                hierarchies are designed, each item in the collection can be assigned any number of labels from any
+                number of facets. In a properly designed faceted navigation interface, the user can browse the
+                information collection from any of the different facets as a starting point, and after starting with one
+                facet, can then navigate using any other facet. Usability results suggest that this kind of interface is
+                highly usable for navigation of information collections with somewhat homogeneous content (<a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#flamenco01" tiptitle="J.�English, M.A.
+  Hearst, R.�Sinha, K.�Swearingen, and K.-P. Yee.
+Examining the usability of web site search, 2001.
+Unpublished Manuscript,
+  http://flamenco.berkley.edu/papers/epicurious-study.pdf.">English et&nbsp;al., 2001</a>, <a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#hearst02" tiptitle="M.A. Hearst,
+  J.�English, R.�Sinha, K.�Swearingen, and K.-P. Yee.
+Finding the flow in web site search.
+&lt;i&gt;Communications of the ACM&lt;/i&gt;, 45(9), September 2002."> Hearst et&nbsp;al., 2002</a>, <a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#yee03" tiptitle="K.-P. Yee, K.�Swearingen,
+  K.�Li, and M.A. Hearst.
+Faceted metadata for image search and browsing.
+In &lt;i&gt;Proceedings of the SIGCHI Conference on Human Factors in Computing
+  Systems (CHI&#39;03)&lt;/i&gt;, pages 401�408. ACM New York, NY, USA, 2003."> Yee et&nbsp;al., 2003</a>). </p>
+              <p>
+                This kind of interface is heavily used on Web sites today, including shopping and specialized product
+                sites, restaurant guides, and online library catalogs. Figure <a
+                  href="https://searchuserinterfaces.com/book/sui_ch1_design.html#figure_1.7"><b>1.7</b></a> shows an
+                example in which a user interested in finding local events to attend on zvents.com can select a city in
+                which the event is to take place (<i> Berkeley</i>) and then select a type of event (<i> Community</i>)
+                in this case. The faceted display allows the user to select the order in which to choose the categories,
+                and the search results are narrowed accordingly to show only those events that will take place in
+                Berkeley and have to do with community. Beneath each facet category label are shown the subcategory
+                labels along with <i> query previews</i> (<a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#plaisant99" tiptitle="C.�Plaisant,
+  B.�Shneiderman, K.�Doan, and T.�Bruns.
+Interface and data architecture for query preview in networked information
+  systems.
+&lt;i&gt;ACM Transactions on Information Systems (TOIS)&lt;/i&gt;, 17(3):320�341,
+  1999.">Plaisant et&nbsp;al., 1999</a>) showing how many documents are associated with each category. For instance,
+                one can see how many of the 43 community events taking place in Berkeley take will be held each of the
+                different neighborhoods, and one can see how many of each type of event is available (<i> Activism,
+                  Health, Science</i>, etc.). Note also the use of light-colored text within the query boxes to indicate
+                which kind of information should be entered into each query box. </p>
+              <p>
+              </p>
+              <div id="index_zvents_1"></div>
+              <div id="index_query previews_1"></div>
+              <div id="index_previews_1"></div>
+              <div id="index_navigation_2"></div>
+              <p>
+              </p>
+              <div class="figure-2" id="figure_1.7">
+                <img
+                  src="./Design of Search User Interfaces (Ch 1) _ Search User Interfaces _ Marti Hearst _ Cambridge University Press 2009_files/zvents.png"
+                  width="100%">
+                <div class="caption"> <b>Figure 1.7:</b> Faceted navigation interface for the zvents.com local events
+                  web site. The user has selected the city of �Berkeley� from the <i> Location</i> facet and �Community�
+                  from the event <i> Category</i> facet, and each of these selections can be further refined (by
+                  �Neighborhood� for <i> Location</i> or by type of community activity). Beside each narrowing category
+                  is shown in parentheses how many items will result from selecting that category. Or the user can opt
+                  to narrow by another faceted entirely, such as <i> When</i>.
+                </div><!-- end div caption -->
+              </div> <!-- end div figure -->
+              <p>
+              </p>
+            </div> <!-- end div subsection -->
+          </div> <!-- end div section -->
+          <div class="section" id="section_1.8">
+            <h2>1.8: Provide Shortcuts</h2>
+            <p>
+            </p>
+            <p>
+              The �provide shortcuts� guideline usually refers to providing alternative interface mechanisms for
+              practiced users of an interface. The classic example is keyboard shortcuts for menu items that otherwise
+              require pulling down and selecting from menus. Keyboard shortcuts can save time and effort when the user
+              is typing, as the shortcuts remove the need to move hands away from the keyboard to the mouse. But there
+              is a barrier to using shortcuts, as they require memorization. </p>
+            <p>
+              An alternative way to think about shortcuts, which is more applicable to search interfaces, is to provide
+              targeted hints about where to go next. For example, certain variations on the document surrogate appear to
+              be successful in practice. One technique that appears to be especially useful for Web search is what are
+              known as <i> sitelinks</i> or <i> deep links</i>. In this view, in the search results, beneath the
+              top-positioned hit, is shown an indented list of important pages from that hit on its Web site, along with
+              a link to more pages from that web site. Presumably the links are chosen because they represent
+              frequently-visited pages within the site, thus saving the user a step or two by allowing them to navigate
+              directly to a page of interest from the search results page. For example, in Figure <a
+                href="https://searchuserinterfaces.com/book/sui_ch1_design.html#figure_1.4"><b>1.4</b></a>, for a query
+              on <b> blackberry</b>, the top hit is the home page of a maker of mobile devices, <i>
+                www.blackberry.com</i>. Beneath the link for this hit are shown links to important pages within the site
+              such as <i> Support</i> and <i> Developers</i> as well as to pages for popular products such as <i>
+                Blackberry Curve</i>. In Google's implementation of this idea, another kind of shortcut is sometimes
+              provided: a search form is shown beneath the hit which allows the user to search within that domain
+              directly from the search results page. </p>
+            <p>
+            </p>
+            <div id="index_Blackberry_1"></div>
+            <div id="index_Yahoo_3"></div>
+            <div id="index_Google_6"></div>
+            <div id="index_hyperlinks_1"></div>
+            <div id="index_sitelinks_1"></div>
+            <p>
+              As another kind of shortcut, for certain well-defined and predictable information needs, major Web search
+              engines today attempt to �guess� the information need from a very terse query based on what kinds of
+              information have been found to be valuable to searchers on that type of query in the past. The relevant
+              �answer� corresponding to that information need is shown directly in the search results page. For example,
+              Yahoo search will display a �shortcut� showing the current local time in Kathmandu, Nepal, for any of the
+              following queries: <b> time kathmandu</b>, <b> kathmandu current time</b>, and <b> what time is it?
+                katmandu</b>. In Google, at one time a query on <b> rentals seattle</b> returned a special form directly
+              in the results list that allowed the user to specify details of a housing search. All Web search engines
+              show links to shopping sites and review sites in response to purchase-oriented queries (such as <b>
+                digital cameras</b>) and images in response to queries for which images are likely to be evocative (such
+              as <b> sunsets</b>). In a sense, this kind of intention prediction is a form of shortcut, eliminating the
+              need for the user to know precisely how to specify a command, and also reducing the need to navigate to
+              external Web pages to find the desired information. </p>
+            <p>
+            </p>
+            <div id="index_Yahoo_4"></div>
+            <div id="index_Google_7"></div>
+            <p>
+            </p>
+          </div> <!-- end div section -->
+          <div class="section" id="section_1.9">
+            <h2>1.9: Reduce Errors</h2>
+            <p>
+            </p>
+            <p>
+              The steps taken by interface designers to reduce the likelihood of user errors tend to overlap with other
+              guidelines. One key example discussed above is to provide accurate suggestions for typographic and
+              spelling errors. Some additional heuristics are described below. </p>
+            <p>
+            </p>
+            <div class="subsection" id="subsection_1.9.1">
+              <h3>1.9.1: Avoid Empty Results Sets</h3>
+              <p>
+                A general rule of thumb for search usability is to avoid showing the user empty results sets. Spelling
+                correction and term expansion can help with this. Another mechanism mentioned above is to use query
+                previews to show how many documents will result if a particular navigation step is taken. Interfaces
+                that allow users to select many different attributes from different categories simultaneously (e.g., for
+                a recipes interface, selecting <i> dessert</i> and <i> low-fat</i> and <i> cheese</i>) may run the risk
+                of turning up empty results. A faceted interface with query previews would show the user that after
+                selecting <i> dessert</i> and <i> low-fat</i>, the list of ingredients has zero hits on <i> cheese</i>,
+                so the user would know they have to relax one of the already chosen constraints to get non-empty
+                results. </p>
+              <p>
+              </p>
+              <div id="index_empty results_1"></div>
+              <div id="index_query previews_2"></div>
+              <div id="index_previews_2"></div>
+              <p>
+              </p>
+            </div> <!-- end div subsection -->
+            <div class="subsection" id="subsection_1.9.2">
+              <h3>1.9.2: Address the Vocabulary Problem</h3>
+              <p>
+              </p>
+              <div id="index_vocabulary problem_1"></div>
+              <p>
+                Another form of error can come from using wording that the user does not recognize in navigational cues
+                or in menu items, or in the search itself. A general problem with searching via keyword matching lies
+                with the �productivity of language� -- also known as �the vocabulary problem� -- that the same idea can
+                be expressed in an astonishing variety of ways. Consider, for example, the different ways one might ask
+                the price of a camera in English: </p>
+              <p>
+              </p>
+              <div id="index_keyword queries_4"></div>
+              <p>
+              </p>
+              <ul>
+                <li> How much does that camera cost? </li>
+                <li> How much for that camera? </li>
+                <li> That camera. How much? </li>
+                <li> What is the price of that camera? </li>
+                <li> Please price that camera for me. </li>
+                <li> What're you asking for that camera? </li>
+                <li> How much will that camera set me back? </li>
+                <li> What are these cameras going for? </li>
+                <li> What's that camera worth to you? </li>
+              </ul>
+              <p>
+                To prove scientifically how word choice varies among people, <a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#furnas1987vph" tiptitle="GW�Furnas,
+  TK�Landauer, LM�Gomez, and ST�Dumais.
+The vocabulary problem in human-system communication.
+&lt;i&gt;Communications of the ACM&lt;/i&gt;, 30(11):964�971, 1987.">Furnas et&nbsp;al., 1987</a> explored the
+                vocabulary variation phenomenon by studying spontaneous word choice for five different computer
+                application domains. These included asking 48 typists to describe 25 text editing markup operations, and
+                asking 337 college students to describe a set of 50 common objects. The experimenters counted how often
+                each word or phrase was used to label each operation or object, and looked at the agreement between
+                people. </p>
+              <p>
+                The probability that two typists would suggest the same word to describe a markup operation was .11, and
+                the probability that two college students would name an object with the same word was .12. <a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#furnas1987vph" tiptitle="GW�Furnas,
+  TK�Landauer, LM�Gomez, and ST�Dumais.
+The vocabulary problem in human-system communication.
+&lt;i&gt;Communications of the ACM&lt;/i&gt;, 30(11):964�971, 1987.">Furnas et&nbsp;al., 1987</a> then measured the
+                effect of choosing the most commonly selected word for each concept, and comparing this to the terms
+                people originally selected. This increases the probability of agreement to .22 for the markup operations
+                task and .28 for the common objects naming task. When they broadened the vocabulary to include the three
+                most frequently elicited terms for each concept (simulating, in a sense, a thesaurus), they found the
+                probability of agreement increased to .49 for the markup task and .48 for the object naming task.
+                Further analysis indicated that even with 15 aliases per term, only 60-80% of the original terms people
+                thought of would be matched. </p>
+              <p>
+                The fact that different people express similar concepts in different ways has deep implications for the
+                design of information systems. It suggests that a searcher might not use the same combinations of terms
+                that the authors of the most relevant documents used. Term expansions have been shown to be an effective
+                way to help with this problem. It also suggests that terminology for labeling interface elements must be
+                chosen very carefully. In fact, terminology choice is so important that a design technique has been
+                developed, called <i> card sorting</i>, whose goal is to attempt to converge on the most reliable,
+                predictable categories and labels for a given information structure (<a
+                  href="https://searchuserinterfaces.com/book/sui_references.html#kuniavsky2003oue" tiptitle="M.�Kuniavsky.
+&lt;i&gt;Observing the User Experience: A Practitioner&#39;s Guide to User
+  Research&lt;/i&gt;.
+Morgan Kaufmann, 2003.">Kuniavsky, 2003</a>). </p>
+              <p>
+              </p>
+              <div id="index_term expansions_2"></div>
+              <div id="index_card sorting_1"></div>
+              <p>
+              </p>
+              <div id="index_vocabulary problem_2"></div>
+              <p>
+              </p>
+              <p>
+              </p>
+              <p>
+              </p>
+            </div> <!-- end div subsection -->
+          </div> <!-- end div section -->
+          <div class="section" id="section_1.10">
+            <h2>1.10: Recognize the Importance of Small Details</h2>
+            <p>
+            </p>
+            <p>
+              Search interfaces must show rich and complex information, and small details can make the difference
+              between a successful and a failed design. There is ample evidence that details in a search interface can
+              deeply affect how the information seeker executes their search. </p>
+            <p>
+              For example, <a href="https://searchuserinterfaces.com/book/sui_references.html#franzen2000vai" tiptitle="K.�Franzen and J.�Karlgren.
+Verbosity and interface design.
+Technical report, Technical Report T2000, 2000.">Franzen and Karlgren, 2000</a> found that showing study participants a
+              wider entry form encouraged them to type longer queries. <a
+                href="https://searchuserinterfaces.com/book/sui_references.html#allen1994psl" tiptitle="B.�Allen.
+Perceptual speed, learning and information retrieval performance.
+&lt;i&gt;Proceedings of the 17th Annual International ACM SIGIR Conference on
+  Research and development in information retrieval (SIGIR&#39;94)&lt;/i&gt;, pages
+  71�80, 1994.">Allen, 1994</a> showed that varying the order in which document surrogate information was shown to
+              searchers dramatically effected how much searchers learned about the information (in this case, subject
+              headings) available in a document collection. <a
+                href="https://searchuserinterfaces.com/book/sui_references.html#russell:bll" tiptitle="D.M. Russell,
+  M.�Slaney, Y.�Qu, and M.�Houston.
+Being literate with large document collections: Observational studies and cost
+  structure tradeoffs.
+In &lt;i&gt;Proceedings of the 39th Annual Hawaii International Conference on
+  System Sciences (HICSS&#39;06)&lt;/i&gt;, 2006.">Russell et&nbsp;al., 2006</a> experimented with a visualization that
+              showed documents as clusters of icons in a two-dimensional space, and concluded that this view reduced
+              performance because the representation did not match human perceptual capabilities well. Several
+              researchers have shown that users of Web search engines expect the first few results returned to be more
+              relevant than those that follow, and are more likely to click on the first two hits than they should be
+              when the results ordering is reversed (<a
+                href="https://searchuserinterfaces.com/book/sui_references.html#joachims2005aic" tiptitle="T.�Joachims,
+  L.�Granka, B.�Pan, H.�Hembrooke, and G.�Gay.
+Accurately Interpreting Clickthrough Data As Implicit Feedback.
+&lt;i&gt;Proceedings of the 28th Annual International ACM SIGIR Conference on
+  Research and development in information retrieval (SIGIR&#39;05)&lt;/i&gt;, pages
+  154�161, 2005.">Joachims et&nbsp;al., 2005</a>). </p>
+            <p>
+              As another example of the influence of small design decisions on user experience, in an early version of
+              the Google spelling suggestions interface, searchers generally did not notice the suggestion at the top of
+              the page of results. In the initial design, the interface showed a suggestion sentence worded as follows:
+              �If you didn't find what you were looking for ...� At the same time, Google was receiving feedback from
+              searchers complaining that they were getting incorrect results for their queries. According to a product
+              VP at Google (<a href="https://searchuserinterfaces.com/book/sui_references.html#hurst02" tiptitle="M.�Hurst.
+Interview: Marissa mayer, product manager, google, October 15 2002.
+http://www.goodexperience.com/blog/archives/000066.php.">Hurst, 2002</a>, <a
+                href="https://searchuserinterfaces.com/book/sui_references.html#sinha05" tiptitle="R.�Sinha.
+Google&#39;s pragmatic, data-driven approach to user interface design, January 13
+  2005.
+http://rashmisinha.com/2005/01/13/googles-pragmatic-data-driven-approach-to-user-interface-design/."> Sinha, 2005</a>),
+              in many of these cases, the spelling suggestions module had suggested an appropriate correction, but
+              searchers did not notice the information at the top of the page. Instead, they focused on the search
+              results, scrolling down to the bottom of the page scanning for a relevant result but seeing only the very
+              poor matches to the misspelled words. They would then give up and complain that the engine did not return
+              relevant results. To improve the likelihood of searchers noticing the spelling suggestions, two small
+              interface adjustments were made. The first was to repeat the spelling suggestion at the bottom of the
+              page. The second was to test and then shorten the wording surrounding the suggestion. On the top of the
+              page it now reads: <i> Did you mean: ...</i> and at the bottom of the results, <i> Did you mean to search
+                for: ...</i> with an underlined hyperlink to the results for the correctly spelled words (<a
+                href="https://searchuserinterfaces.com/book/sui_references.html#hurst02" tiptitle="M.�Hurst.
+Interview: Marissa mayer, product manager, google, October 15 2002.
+http://www.goodexperience.com/blog/archives/000066.php.">Hurst, 2002</a>, <a
+                href="https://searchuserinterfaces.com/book/sui_references.html#sinha05" tiptitle="R.�Sinha.
+Google&#39;s pragmatic, data-driven approach to user interface design, January 13
+  2005.
+http://rashmisinha.com/2005/01/13/googles-pragmatic-data-driven-approach-to-user-interface-design/."> Sinha, 2005</a>).
+            </p>
+            <p>
+            </p>
+            <div id="index_Google_8"></div>
+            <p>
+            </p>
+          </div> <!-- end div section -->
+          <div class="section" id="section_1.11">
+            <h2>1.11: Recognize the Importance of Aesthetics in Design</h2>
+            <p>
+            </p>
+            <div id="index_aesthetics_1"></div>
+            <p>
+              A search interface designer must balance the choices of layout, placement and amount of blank space (often
+              referred to as �white space�), color, contrasts among fonts' style, weight, and size. The importance of
+              the application of graphic design principles is established in the HCI literature. For example, <a
+                href="https://searchuserinterfaces.com/book/sui_references.html#parush10elg" tiptitle="A.�Parush,
+  R.�Nadir, and A.�Shtub.
+Evaluating the Layout of Graphical User Interface Screens: Validation of a
+  Numerical Computerized Model.
+&lt;i&gt;International Journal Of Human-Computer Interaction&lt;/i&gt;, 10(4),
+  1998.">Parush et&nbsp;al., 1998</a> performed a study comparing 16 different versions of display layout, where they
+              deliberately varied the quality of each design according to the graphic design principles of grouping,
+              density, alignment, and size. In a study with 75 participants, they found that the task time for the worst
+              layout was twice that of the best, and that overall, the very well designed screens resulted in shorter
+              search times and higher subjective preferences. </p>
+            <p>
+              Aesthetic impressions also play an important role in user acceptance and have been found to correlate with
+              perceptions of an interface's quality, user satisfaction, and overall impression of a site (<a
+                href="https://searchuserinterfaces.com/book/sui_references.html#hassenzahl2004ibg" tiptitle="M.�Hassenzahl.
+The Interplay of Beauty, Goodness, and Usability in Interactive Products.
+&lt;i&gt;Human-Computer Interaction&lt;/i&gt;, 19(4):319�349, 2004.">Hassenzahl, 2004</a>, <a
+                href="https://searchuserinterfaces.com/book/sui_references.html#lindgaard2003ebw" tiptitle="G.�Lindgaard and C.�Dudek.
+What is this evasive beast we call user satisfaction?
+&lt;i&gt;Interacting with Computers&lt;/i&gt;, 15(3):429�452, 2003."> Lindgaard and Dudek, 2003</a>). <a
+                href="https://searchuserinterfaces.com/book/sui_references.html#nakaradakordic2005epa" tiptitle="I.�Nakarada-Kordic and B.�Lobb.
+Effect of perceived attractiveness of web interface design on visual search of
+  web sites.
+&lt;i&gt;Proceedings of the 6th ACM SIGCHI New Zealand chapter&#39;s international
+  conference on Computer-human interaction: making CHI natural&lt;/i&gt;, pages
+  25�27, 2005.">Nakarada-Kordic and Lobb, 2005</a> report that viewers persevere longer in a search task on Web sites
+              whose design appeals to them. <a
+                href="https://searchuserinterfaces.com/book/sui_references.html#vanderheijden2003fiu" tiptitle="H.�van�der Heijden.
+Factors influencing the usage of websites: the case of a generic portal in The
+  Netherlands.
+&lt;i&gt;Information &amp; Management&lt;/i&gt;, 40(6):541�549, 2003.">van&nbsp;der Heijden, 2003</a> found that the
+              visual appeal of a Web site affected participants' enjoyment and perception of ease of use, and to a small
+              degree, the usability of the system. <a
+                href="https://searchuserinterfaces.com/book/sui_references.html#norman2004edw" tiptitle="D.A. Norman.
+&lt;i&gt;Emotional Design: Why We Love (or Hate) Everyday Things&lt;/i&gt;.
+Basic Books, 2004.">Norman, 2004</a> also writes about the importance of aesthetics in perceived and real usability. In
+              the study of <a href="https://searchuserinterfaces.com/book/sui_references.html#parush10elg" tiptitle="A.�Parush,
+  R.�Nadir, and A.�Shtub.
+Evaluating the Layout of Graphical User Interface Screens: Validation of a
+  Numerical Computerized Model.
+&lt;i&gt;International Journal Of Human-Computer Interaction&lt;/i&gt;, 10(4),
+  1998.">Parush et&nbsp;al., 1998</a> mentioned above, usability and aesthetic design are often intertwined, but <a
+                href="https://searchuserinterfaces.com/book/sui_references.html#benbassat2006eas" tiptitle="T.�Ben-Bassat, J.�Meyer, and N.�Tractinsky.
+Economic and subjective measures of the perceived value of aesthetics and
+  usability.
+&lt;i&gt;ACM Transactions on Computer-Human Interaction (TOCHI)&lt;/i&gt;,
+  13(2):210�234, 2006.">Ben-Bassat et&nbsp;al., 2006</a> were able to show that more aesthetic designs were perceived
+              as more useful even when they were slightly less useful than a comparable, less attractive design. </p>
+            <p>
+              As an example of these effects on search interfaces, in a comparative study, <a
+                href="https://searchuserinterfaces.com/book/sui_references.html#hotchkiss07" tiptitle="G.�Hotchkiss.
+Q&amp;A With Marissa Mayer, Google VP, Search Products &amp; User Experience,
+  January 26 2007.
+http://searchengineland.com/070126-124723.php.">Hotchkiss, 2007b</a> asked Yahoo and MSN search users to do a query
+              using Google's Web search. They found that by almost every metric (including percentage of page scanned
+              before choosing a link, time to choose a link, and relevance of the selected link), the participants had a
+              better user experience on Google than using their standard search engine. <a
+                href="https://searchuserinterfaces.com/book/sui_references.html#hotchkiss07" tiptitle="G.�Hotchkiss.
+Q&amp;A With Marissa Mayer, Google VP, Search Products &amp; User Experience,
+  January 26 2007.
+http://searchengineland.com/070126-124723.php.">Hotchkiss, 2007b</a> attributed this difference <i> not</i> to the
+              quality of the search results, but rather to several design choices. He noted that details in the way the
+              information was presented made it easier to determine relevancy, and suggested that this might be a
+              combination of methods of revealing information �scent� (most likely by showing more descriptive document
+              summaries that are relevant to the queries), along with subtle graphic design details. In an interview (<a
+                href="https://searchuserinterfaces.com/book/sui_references.html#hotchkiss07" tiptitle="G.�Hotchkiss.
+Q&amp;A With Marissa Mayer, Google VP, Search Products &amp; User Experience,
+  January 26 2007.
+http://searchengineland.com/070126-124723.php.">Hotchkiss, 2007b</a>) , a Google VP confirmed that the Web page design
+              is the result of careful usability testing of small design elements; for example, putting a line along the
+              side of a textual advertisement within the search results page, as opposed to boxing the ad in, better
+              integrates the ad with what people read. The Google designers pay careful attention to the aesthetic
+              effects of, for example, the height and width proportions for icons. <a
+                href="https://searchuserinterfaces.com/book/sui_references.html#hotchkiss07" tiptitle="G.�Hotchkiss.
+Q&amp;A With Marissa Mayer, Google VP, Search Products &amp; User Experience,
+  January 26 2007.
+http://searchengineland.com/070126-124723.php.">Hotchkiss, 2007b</a> also noted that Google is careful to ensure that
+              all information in the Web page's �sweet spot� (the upper left hand corner that is known to be where users
+              tend to look first for search results), including the ads, is of high relevance to the query. He suggested
+              that even if the result hits for other search engines are equivalent in quality to Google's, they
+              sometimes show ads that are not relevant at the top of the results list, thus degrading the user
+              experience. </p>
+            <p>
+            </p>
+            <div id="index_advertisements_2"></div>
+            <div id="index_aesthetics_2"></div>
+            <div id="index_design guidelines_2"></div>
+            <p>
+            </p>
+            <div id="index_Microsoft_2"></div>
+            <div id="index_Yahoo_5"></div>
+            <div id="index_Google_9"></div>
+            <div id="index_sweet spot_1"></div>
+            <p>
+            </p>
+          </div> <!-- end div section -->
+          <div class="section" id="section_1.12">
+            <h2>1.12: Conclusions</h2>
+            <p>
+              This chapter has introduced the ideas and practices surrounding user interface design in general, and
+              search interface design in particular. It has explained some of the difficulties with search interface
+              design and provided a set of design guidelines tailored specifically to search user interfaces. These
+              guidelines include: </p>
+            <p>
+            </p>
+            <ul>
+              <li> Offer efficient and informative feedback, </li>
+              <li> Balance user control with automated actions, </li>
+              <li> Reduce short-term memory load, </li>
+              <li> Provide shortcuts, </li>
+              <li> Reduce errors, </li>
+              <li> Recognize the importance of small details, and </li>
+              <li> Recognize the importance of aesthetics. </li>
+            </ul>
+            <p>
+              This chapter has also summarized some of the most successful design ideas that are commonly in use in
+              search interfaces today. This summary is based on generalizing over the results of years of research,
+              experimentation, and tests in the marketplace. The coming years should reveal additional new, exciting
+              ideas that will become reliable standards for search user interfaces. </p>
+            <p>
+            </p>
+          </div> <!-- end div section -->
+        </div> <!-- end div chapter -->
+        <!-- div nextnav -->
+      </div><!-- div col -->
+    </div><!-- maincol --><!-- navcol -->
+  </div><!-- div footer --><!-- div container -->
+
+</body>
+
+</html>
