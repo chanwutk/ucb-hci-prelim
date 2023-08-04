@@ -1,8 +1,8 @@
-rm **/*.{cut,aux,bbl,blg,fdb_latexmk,fls,log,out}
+rm -v ./latex/*.{cut,aux,bbl,blg,fdb_latexmk,fls,log,out}
 if ! git diff --exit-code site src test test-runtime; then
   git add --all
   git config --global user.name 'Github Actions Bot'
-  git config --global user.email 'apperception-actions-bot@users.noreply.github.com'
+  git config --global user.email 'hci-prelim-actions-bot@users.noreply.github.com'
   git commit -m "style: $1"
 fi
 
