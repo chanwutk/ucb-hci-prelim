@@ -1,3 +1,4 @@
+rm **/*.{cut,aux,bbl,blg,fdb_latexmk,fls,log,out}
 if ! git diff --exit-code site src test test-runtime; then
   git add --all
   git config --global user.name 'Github Actions Bot'
