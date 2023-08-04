@@ -1,0 +1,29 @@
+name: Build and Publish
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build_latex:
+    strategy:
+      matrix:
+        directory: [
+          design-and-redesign-in-datavis,
+        ]
+
+    name: Build and Publish PDF
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Set up Git repository
+      uses: actions/checkout@v3
+
+    - name: Build LaTeX
+      uses: xu-cheng/latex-action@v2
+      with:
+        root_file: ./latex/${{ matrix.directory }}/main.tex
+        latexmk_use_lualatex: true
+
+    - name: Commit generated PDF
+      run: ./commit-and-push.sh "[CI] Generate PDF for ${{ matrix.directory }}"
