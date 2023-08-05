@@ -18,7 +18,6 @@ jobs:
       with:
         work_in_root_file_dir: true
         glob_root_file: true
-        latexmk_use_lualatex: true
         root_file: "./latex/*/main.tex"
 
     - name: Commit generated PDF
